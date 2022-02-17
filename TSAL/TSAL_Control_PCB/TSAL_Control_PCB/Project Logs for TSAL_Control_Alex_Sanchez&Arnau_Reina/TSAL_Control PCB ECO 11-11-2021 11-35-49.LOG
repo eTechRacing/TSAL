@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=NetQ8_1 Pin=R38-1
+Removed Pin From Net: NetName=NetC13_2 Pin=R40-1
+Removed Pin From Net: NetName=NetC13_2 Pin=R47-1
+Removed Member From Class: ClassName=Control Member=Q5
+Removed Member From Class: ClassName=Control Member=Q10
+Removed Member From Class: ClassName=Control Member=R38
+Removed Member From Class: ClassName=Control Member=R40
+Removed Member From Class: ClassName=Control Member=R47
+Change Component Comment : Designator=D13 Old Comment=+5V New Comment=Green, 3.2 V, 140 deg
+Change Component Comment : Designator=D14 Old Comment=+12V New Comment=Green, 3.2 V, 140 deg
+Change Component Comment : Designator=D8 Old Comment=Green New Comment=Blue, 3.2 V, 140 deg
+Change Component Comment : Designator=D7 Old Comment=Imp. inv. New Comment=Blue
+Change Component Comment : Designator=D6 Old Comment=Imp. TS New Comment=Blue
+Change Component Comment : Designator=R5 Old Comment=Inv. Left New Comment=1k
+Change Component Comment : Designator=D1 Old Comment=Inv. Left New Comment=Blue
+Change Component Comment : Designator=R6 Old Comment=Inv. Right New Comment=1k
+Change Component Comment : Designator=D2 Old Comment=Inv. Right New Comment=Blue
+Change Component Comment : Designator=D9 Old Comment=Red New Comment=Blue, 3.2 V, 140 deg
+Added Pin To Net: NetName=NetQ8_1 Pin=Q7-1
+Change Net Name : Old Net Name=NetF2_1 New Net Name=TS+
+Change Net Name : Old Net Name=NetF3_1 New Net Name=TS_invR+
+Change Net Name : Old Net Name=NetF4_1 New Net Name=TS+post
+Change Net Name : Old Net Name=NetJ1_6 New Net Name=TS-post
+Change Net Name : Old Net Name=NetQ8_1 New Net Name=NetQ7_1
+Added Pin To Net: NetName=NetQ11_1 Pin=Q11-1
+Added Pin To Net: NetName=NetQ11_1 Pin=R44-2
+Added Net: Name=NetQ11_1
