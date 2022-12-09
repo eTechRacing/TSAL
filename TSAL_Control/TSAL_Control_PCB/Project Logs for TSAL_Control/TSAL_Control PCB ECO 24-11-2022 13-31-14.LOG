@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=TS-_Unfused Pin=X_Discharge-2
+Removed Pin From Net: NetName=Shutdown_Chain_End Pin=X_Discharge-3
+Removed Pin From Net: NetName=GND Pin=X_Discharge-4
+Removed Member From Class: ClassName=TSAL_Control Member=J_TS+
+Removed Member From Class: ClassName=TSAL_Control Member=X_Discharge
+Add Net: Net with name "LV+_in" already exists

@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=TS_is_OFF Pin=TP211-1
+Removed Member From Class: ClassName=Green activation Member=TP211
+Added Member To Class: ClassName=Normal operation Member=Component TP301 TestPoint

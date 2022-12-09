@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=Safe_State_Unlatched Pin=TP411-1
+Removed Pin From Net: NetName=Safe_State Pin=TP414-1
+Removed Pin From Net: NetName=Not_Safe_State Pin=TP415-1
+Removed Member From Class: ClassName=SCS and Implausabilities Member=TP411
+Removed Member From Class: ClassName=SCS and Implausabilities Member=TP414
+Removed Member From Class: ClassName=SCS and Implausabilities Member=TP415
+Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC

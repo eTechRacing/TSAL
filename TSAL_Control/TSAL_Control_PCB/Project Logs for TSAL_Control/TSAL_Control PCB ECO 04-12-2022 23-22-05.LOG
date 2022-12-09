@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=AIR-_Implausability Pin=U603-3
+Removed Pin From Net: NetName=Precharge_Implausability Pin=U603-4
+Added Pin To Net: NetName=Precharge_Implausability Pin=U603-3
+Added Pin To Net: NetName=AIR-_Implausability Pin=U603-4

@@ -1,0 +1,5 @@
+Change Net Name : Old Net Name=Green_ON New Net Name=TS_OFF
+Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC
+Change Net Name : Old Net Name=Red_ON New Net Name=TS_ON
+Added Member To Class: ClassName=SCS and Implausabilities Member=Component TP404 TestPoint
+Added Member To Class: ClassName=SCS and Implausabilities Member=Component TP407 TestPoint
