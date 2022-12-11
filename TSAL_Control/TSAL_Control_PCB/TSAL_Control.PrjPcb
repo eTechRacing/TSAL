@@ -546,36 +546,36 @@ DocumentPath=Project Outputs for TSAL_Control\Design Rule Check - TSAL_Control.h
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=5.0
 
 [Parameter2]
-Name=Department
-Value=Powertrain
-
-[Parameter3]
-Name=DesignedByURL
-Value=e-techracing.es
-
-[Parameter4]
-Name=DesignerMail
-Value=dredondovinolo@gmail.com
-
-[Parameter5]
-Name=DesignerName
-Value=David Redondo
-
-[Parameter6]
-Name=Project
-Value=TSAL_Control
-
-[Parameter7]
 Name=ReviewerName
 Value=David Redondo
 
+[Parameter3]
+Name=Project
+Value=TSAL_Control
+
+[Parameter4]
+Name=DesignerName
+Value=David Redondo
+
+[Parameter5]
+Name=DesignerMail
+Value=dredondovinolo@gmail.com
+
+[Parameter6]
+Name=DesignedByURL
+Value=e-techracing.es
+
+[Parameter7]
+Name=Department
+Value=Powertrain
+
 [Parameter8]
-Name=Version
-Value=5.0
+Name=Company
+Value=e-Tech Racing
 
 [Configuration1]
 Name=Sources

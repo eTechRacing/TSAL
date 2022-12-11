@@ -1,0 +1,10 @@
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [TSAL_Inverters.PcbDoc]
+   Generated File[TSAL_Inverters.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 22:26:55 On 11/12/2022

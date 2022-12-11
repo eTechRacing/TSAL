@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+5 TS Pin=DCDC901-1
+Removed Pin From Net: NetName=TS- Pin=DCDC901-3
+Removed Pin From Net: NetName=GND Pin=DCDC901-4
+Removed Pin From Net: NetName=+12 Pin=DCDC901-5
+Added Pin To Net: NetName=GND Pin=DCDC901-1
+Added Pin To Net: NetName=+12 Pin=DCDC901-3
+Added Pin To Net: NetName=+5 TS Pin=DCDC901-4
+Added Pin To Net: NetName=TS- Pin=DCDC901-5
+Added Member To Class: ClassName=Red activation Member=Component DCDC901 RNM-1205S/P

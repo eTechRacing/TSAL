@@ -1,0 +1,202 @@
+*************************************************************
+FileName = TSAL_Light.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Component Outline
+      File : TSAL_Light.GM4
+
+    Adding Layer      : Bottom Component Outline
+
+
+Used DCodes :
+    D10
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Component Outline
+      File : TSAL_Light.GM3
+
+    Adding Layer      : Top Component Outline
+
+
+Used DCodes :
+    D10
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : TSAL_Light.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : TSAL_Light.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : TSAL_Light.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : TSAL_Light.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : TSAL_Light.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : TSAL_Light.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : TSAL_Light.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : TSAL_Light.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : TSAL_Light.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : TSAL_Light.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : TSAL_Light.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : TSAL_Light.GM
+
+
+Used DCodes :
+    D23
+*************************************************************
+

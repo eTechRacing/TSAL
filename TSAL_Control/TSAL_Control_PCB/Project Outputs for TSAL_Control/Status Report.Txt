@@ -1,0 +1,10 @@
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [TSAL_Control.PcbDoc]
+   Generated File[TSAL_Control.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 13:14:53 On 11/12/2022

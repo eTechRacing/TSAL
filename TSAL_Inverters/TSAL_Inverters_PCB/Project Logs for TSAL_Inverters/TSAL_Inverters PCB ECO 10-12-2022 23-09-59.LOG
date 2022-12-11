@@ -1,0 +1,7 @@
+Added Component: Designator=TP15(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR7_1 Pin=TP15-1
+Added Member To Class: ClassName=TSAL_Inverters Member=Component TP15 TestPoint
