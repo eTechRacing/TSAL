@@ -2,31 +2,68 @@
 FileName = TSAL_Control.GBR
 AutoAperture = True
 *************************************************************
-Generating : PWR
-      File : TSAL_Control.G2
+Generating : Mechanical 15
+      File : TSAL_Control.GM15
 
-    Adding Layer      : PWR
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Mechanical 15
 
 
 Used DCodes :
-    D19
-    D71
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
 *************************************************************
 
 *************************************************************
-Generating : Bottom Layer
-      File : TSAL_Control.GBL
+Generating : Mechanical 13
+      File : TSAL_Control.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Component Outline
+      File : TSAL_Control.GM4
+
+    Adding Layer      : Bottom Component Outline
+
+
+Used DCodes :
+    D13
+    D94
+*************************************************************
+
+*************************************************************
+Generating : Top Component Outline
+      File : TSAL_Control.GM3
+
+    Adding Layer      : Top Component Outline
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D94
+    D95
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : TSAL_Control.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D72
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : TSAL_Control.GBP
+
+    Adding Layer      : Bottom Paste
 
     Adding Layer      : Bottom Layer
 
@@ -34,26 +71,15 @@ Generating : Bottom Layer
 
 
 Used DCodes :
-    D10
+    D16
+    D17
     D18
-    D19
-    D20
     D21
     D22
     D23
+    D24
     D25
-    D35
     D36
-    D71
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
     D84
     D85
     D86
@@ -62,42 +88,10 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Pad Master
-      File : TSAL_Control.GPB
+Generating : Top Paste
+      File : TSAL_Control.GTP
 
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D25
-    D35
-    D36
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D84
-    D85
-    D86
-    D87
-    D88
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : TSAL_Control.GPT
+    Adding Layer      : Top Paste
 
     Adding Layer      : Top Layer
 
@@ -128,30 +122,42 @@ Used DCodes :
     D36
     D37
     D38
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : TSAL_Control.GTO
+Generating : Bottom Solder
+      File : TSAL_Control.GBS
 
-    Adding Layer      : Top Overlay
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
+    D39
+    D40
+    D41
+    D44
+    D45
+    D46
+    D47
+    D48
+    D59
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D89
+    D90
+    D91
+    D92
+    D93
 *************************************************************
 
 *************************************************************
@@ -201,64 +207,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 13
-      File : TSAL_Control.GM13
-
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : TSAL_Control.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D48
-    D58
-    D59
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D89
-    D90
-    D91
-    D92
-    D93
-*************************************************************
-
-*************************************************************
-Generating : Bottom Component Outline
-      File : TSAL_Control.GM4
-
-    Adding Layer      : Bottom Component Outline
-
-
-Used DCodes :
-    D13
-    D94
-*************************************************************
-
-*************************************************************
 Generating : Bottom Overlay
       File : TSAL_Control.GBO
 
@@ -273,13 +221,157 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 15
-      File : TSAL_Control.GM15
+Generating : Top Overlay
+      File : TSAL_Control.GTO
 
-    Adding Layer      : Mechanical 15
+    Adding Layer      : Top Overlay
 
 
 Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : TSAL_Control.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : TSAL_Control.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D21
+    D22
+    D23
+    D24
+    D25
+    D36
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D84
+    D85
+    D86
+    D87
+    D88
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : TSAL_Control.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D14
+    D16
+    D17
+    D18
+    D21
+    D22
+    D23
+    D24
+    D25
+    D36
+    D71
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+*************************************************************
+
+*************************************************************
+Generating : PWR
+      File : TSAL_Control.G2
+
+    Adding Layer      : PWR
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D71
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
 *************************************************************
 
 *************************************************************
@@ -292,7 +384,7 @@ Generating : GND
 
 
 Used DCodes :
-    D19
+    D18
     D71
     D75
     D76
@@ -316,6 +408,7 @@ Generating : Top Layer
 
 Used DCodes :
     D10
+    D14
     D16
     D17
     D18
@@ -355,97 +448,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Paste
-      File : TSAL_Control.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D16
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : TSAL_Control.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D25
-    D35
-    D36
-    D84
-    D85
-    D86
-    D87
-    D88
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 1
-      File : TSAL_Control.GM1
-
-    Adding Layer      : Mechanical 1
-
-
-Used DCodes :
-    D72
-*************************************************************
-
-*************************************************************
-Generating : Top Component Outline
-      File : TSAL_Control.GM3
-
-    Adding Layer      : Top Component Outline
-
-
-Used DCodes :
-    D13
-    D14
-    D15
-    D94
-    D95
-*************************************************************
-
-*************************************************************
 Generating : Drill Drawing
       File : TSAL_Control.GD1
 
@@ -470,7 +472,6 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -483,7 +484,6 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -496,7 +496,6 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -509,7 +508,6 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -535,7 +533,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -548,7 +545,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -561,7 +557,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
@@ -574,7 +569,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D98
 *************************************************************
 
 *************************************************************
