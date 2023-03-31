@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: TSAL_Inverters.PcbDoc   31/03/2023  19:34:13
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : TSAL_Inverters.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             17        PTH        106.05mm (4.18inch)
+T2      0.6mm (24mil)                                             Round             3         PTH        8.67mm (0.34inch)
+T3      0.7mm (28mil)                                             Round             1         PTH        0.00mm (0.00inch)
+T4      0.8mm (31mil)                                             Round             8         PTH        137.78mm (5.42inch)
+T5      1mm (39mil)                                               Round             3         PTH        5.08mm (0.20inch)
+T6      1.02mm (40mil)                                            Round             4         PTH        37.18mm (1.46inch)
+T7      1.1mm (43mil)                                             Round             4         PTH        19.48mm (0.77inch)
+T8      1.2mm (47mil)           +/-0.05mm (2mil)                  Round             6         PTH        15.00mm (0.59inch)
+T9      1.5mm (59mil)                                             Round             4         PTH        45.10mm (1.78inch)
+T10     1.6mm (63mil)           +0.05mm (2mil)                    Round             2         PTH        5.00mm (0.20inch)
+T11     3.2mm (126mil)                                            Round             3         PTH        130.29mm (5.13inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              55
+
+Total Processing Time (hh:mm:ss) : 00:00:00

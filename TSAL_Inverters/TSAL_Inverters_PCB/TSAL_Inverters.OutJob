@@ -147,17 +147,17 @@ Configuration7_Name1=OutputConfigurationParameter1
 Configuration7_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=True|IncludeElectricalPadHoles=True|IncludeFreePadHoles=True|ExportFoldedBoard=True|ExportFoldedBoardRate=0|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=True|IncludeCoverLayer=True|SkipFreeBodies=False|SkipHidden=False|DocumentPath=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\TSAL_Inverters\TSAL_Inverters.PcbDoc
 
 [PublishSettings]
-OutputFilePath2=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Light\TSAL_Light_PCB\Project Outputs for TSAL_Light\Job1.PDF
+OutputFilePath2=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\Project Outputs for TSAL_Inverters\Job1.PDF
 ReleaseManaged2=0
-OutputBasePath2=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Light\TSAL_Light_PCB\Project Outputs for TSAL_Light\
+OutputBasePath2=Project Outputs for TSAL_Inverters\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=Job1.PDF
+OutputFileName2=TSAL_Inverters
 OutputFileNameMulti2=
-UseOutputNameForMulti2=1
+UseOutputNameForMulti2=0
 OutputFileNameSpecial2=
 OpenOutput2=1
 PromptOverwrite2=1
@@ -174,7 +174,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\TSAL_Inverters\Project Outputs for TSAL_Inverters\
+OutputFilePath3=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\Project Outputs for TSAL_Inverters\
 ReleaseManaged3=0
 OutputBasePath3=Project Outputs for TSAL_Inverters\
 OutputPathMedia3=
@@ -226,9 +226,9 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Light\TSAL_Light_PCB\Project Outputs for TSAL_Light\Job1.PDF
+RelativeOutputPath2=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\Project Outputs for TSAL_Inverters\Job1.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\TSAL_Inverters\Project Outputs for TSAL_Inverters\
+RelativeOutputPath3=C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Inverters\TSAL_Inverters_PCB\Project Outputs for TSAL_Inverters\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
