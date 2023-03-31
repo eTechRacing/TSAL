@@ -1186,8 +1186,9 @@ Net6=NetName=LV+_in|NetColor=$006E6EFF
 Net7=NetName=NetF_TS-_2|NetColor=$000083FD
 Net8=NetName=NetF_TS+_2|NetColor=$000083FD
 Net9=NetName=RED_ON|NetColor=$00FFFF6E
-Net10=NetName=TS-|NetColor=$000083FD
-Net11=NetName=TS+|NetColor=$000083FD
+Net10=NetName=SC_End|NetColor=$006A00A1
+Net11=NetName=TS-|NetColor=$000083FD
+Net12=NetName=TS+|NetColor=$000083FD
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
