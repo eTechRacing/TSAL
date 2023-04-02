@@ -2,49 +2,8 @@
 FileName = TSAL_Inverters.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Component Outline
-      File : TSAL_Inverters.GM3
-
-    Adding Layer      : Bottom Component Outline
-
-
-Used DCodes :
-    D13
-    D79
-    D80
-*************************************************************
-
-*************************************************************
-Generating : Top Component Outline
-      File : TSAL_Inverters.GM2
-
-    Adding Layer      : Top Component Outline
-
-
-Used DCodes :
-    D10
-    D13
-    D16
-    D79
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 1
-      File : TSAL_Inverters.GM1
-
-    Adding Layer      : Mechanical 1
-
-
-Used DCodes :
-    D15
-    D78
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : TSAL_Inverters.GBP
-
-    Adding Layer      : Bottom Paste
+Generating : Bottom Pad Master
+      File : TSAL_Inverters.GPB
 
     Adding Layer      : Bottom Layer
 
@@ -52,16 +11,23 @@ Generating : Bottom Paste
 
 
 Used DCodes :
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
     D68
+    D69
+    D70
+    D71
     D74
     D75
 *************************************************************
 
 *************************************************************
-Generating : Top Paste
-      File : TSAL_Inverters.GTP
-
-    Adding Layer      : Top Paste
+Generating : Top Pad Master
+      File : TSAL_Inverters.GPT
 
     Adding Layer      : Top Layer
 
@@ -85,33 +51,33 @@ Used DCodes :
     D30
     D31
     D32
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : TSAL_Inverters.GBS
+Generating : Top Overlay
+      File : TSAL_Inverters.GTO
 
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Top Overlay
 
 
 Used DCodes :
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D60
-    D76
-    D77
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
 *************************************************************
 
 *************************************************************
@@ -157,6 +123,59 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Top Component Outline
+      File : TSAL_Inverters.GM2
+
+    Adding Layer      : Top Component Outline
+
+
+Used DCodes :
+    D10
+    D13
+    D16
+    D79
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : TSAL_Inverters.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D60
+    D76
+    D77
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : TSAL_Inverters.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D15
+    D78
+*************************************************************
+
+*************************************************************
 Generating : Bottom Overlay
       File : TSAL_Inverters.GBO
 
@@ -171,82 +190,16 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : TSAL_Inverters.GTO
+Generating : Bottom Component Outline
+      File : TSAL_Inverters.GM3
 
-    Adding Layer      : Top Overlay
+    Adding Layer      : Bottom Component Outline
 
 
 Used DCodes :
-    D10
-    D11
-    D12
     D13
-    D14
-    D15
-    D16
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : TSAL_Inverters.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-*************************************************************
-
-*************************************************************
-Generating : Bottom Pad Master
-      File : TSAL_Inverters.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D74
-    D75
+    D79
+    D80
 *************************************************************
 
 *************************************************************
@@ -317,6 +270,53 @@ Used DCodes :
     D71
     D72
     D73
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : TSAL_Inverters.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : TSAL_Inverters.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D68
+    D74
+    D75
 *************************************************************
 
 *************************************************************
