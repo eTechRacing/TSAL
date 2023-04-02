@@ -4,7 +4,7 @@ The TSAL is an LED light used to indicate the status of the tractive system in a
 ## Functionality
 The TSAL must light green when the AIRs and Precharge relay are open and there is no voltage present in the vehicle side of the accumulator. The TSAL must flash red when there is voltage present in any of the DC-Link housings.
 
-##⚠️WARNING⚠️
+#WARNING⚠️
 ## Please check for changes in ruling. This TSAL is designed following [FSG Rules from 2023](https://www.formulastudent.de/fileadmin/user_upload/all/2023/rules/FS-Rules_2023_v1.1.pdf)
 
 ## Installation
