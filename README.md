@@ -9,7 +9,9 @@ The TSAL must light green when the AIRs and Precharge relay are open and there i
 
 ## Installation
 - TSAL_Light: must not be installed more than 75mm below the main hoop highest point.
-- TSAL_Inverters: must be installed inside any TS enclosure with DC-Link capacitors.
-- TSAL_Control: can be installed anywhere. If only one TS enclosure is used, TSAL_Inverters can be replaced with the voltage measurement part of this PCB.
+- TSAL_Inverters: must be installed inside EVERY TS enclosure with DC-Link capacitors (Inverter enclosures).
+- TSAL_Control: can be installed anywhere. If only one TS enclosure is used for all the inverters, TSAL_Inverters can be replaced with the voltage measurement part of this PCB. If there are TSAL_Inverters PCBs in the car, the voltage measurement part may remain unused.
 - TSAL_Dummy: if an Accumulator is not available, this PCB can be used to send plausible signals to TSAL_Control and let green light up. Can be implemented without a PCB, only with a connector and wiring.
+
+- [AMS_Master](https://github.com/eTechRacing/BMS): Check the signals coming from this PCB, as they control the green light of the TSAL, according to 2023 rules.
 
