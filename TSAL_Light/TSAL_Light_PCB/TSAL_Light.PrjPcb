@@ -369,7 +369,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=RGDYBUJB
+DocumentUniqueId=LRDDYTOK
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for TSAL_Light\Design Rule Check - TSAL_Light.html
@@ -377,6 +377,66 @@ DItemRevisionGUID=
 
 [GeneratedDocument2]
 DocumentPath=Project Outputs for TSAL_Light\Design Rule Check - TSAL_Light_Guillem.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for TSAL_Light\NC Drill\TSAL_Light.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GM
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for TSAL_Light\NC Drill\TSAL_Light.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for TSAL_Light\Gerber\TSAL_Light.REP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for TSAL_Light\ExportSTEP\TSAL_Light.step
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for TSAL_Light\NC Drill\TSAL_Light.TXT
 DItemRevisionGUID=
 
 [Parameter1]
