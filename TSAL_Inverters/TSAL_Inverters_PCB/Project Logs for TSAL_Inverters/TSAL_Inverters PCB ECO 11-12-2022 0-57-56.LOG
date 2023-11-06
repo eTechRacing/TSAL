@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=HV_detection Pin=J1-2
-Removed Pin From Net: NetName=HV_detection Pin=J1-5
-Change Net Name : Old Net Name=HV_detection New Net Name=RED_ON
-Added Pin To Net: NetName=HV_detection Pin=J1-2
-Added Pin To Net: NetName=HV_detection Pin=J1-5
-Added Net: Name=HV_detection

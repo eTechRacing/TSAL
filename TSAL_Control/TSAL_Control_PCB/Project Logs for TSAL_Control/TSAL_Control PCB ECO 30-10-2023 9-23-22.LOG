@@ -1,0 +1,9 @@
+Change Component Comment : Designator=DCDC901 Old Comment=RNM-1205S/P New Comment=RNM-1205S/PH
+Added Pin To Net: NetName=NetQ902_G Pin=U901-14
+Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC
+Added Member To Class: ClassName=Red activation Member=Component Q902 SQ2318BES-T1_GE3
+Added Member To Class: ClassName=Red activation Member=Component R906 R2M-2512FTK
+Added Member To Class: ClassName=Red activation Member=Component R907 CRCW120610K0FKEA
+Added Member To Class: ClassName=Red activation Member=Component R911 CR0805-JW-103ELF
+Added Member To Class: ClassName=Red activation Member=Component TP904 TestPoint
+Added Member To Class: ClassName=EV 4.10.13 Member=Component U501 Arrayy_4x2_XOR

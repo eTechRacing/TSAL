@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=+5 TS Pin=DCDC2-1
-Removed Pin From Net: NetName=TS- Pin=DCDC2-3
-Removed Pin From Net: NetName=GND Pin=DCDC2-4
-Removed Pin From Net: NetName=+12 Pin=DCDC2-5
-Added Pin To Net: NetName=GND Pin=DCDC2-1
-Added Pin To Net: NetName=+12 Pin=DCDC2-3
-Added Pin To Net: NetName=+5 TS Pin=DCDC2-4
-Added Pin To Net: NetName=TS- Pin=DCDC2-5

@@ -1,2 +1,7 @@
-Layer Pairs Export File for PCB: C:\Users\dwegg\Desktop\Electronics Repo\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc
+Layer Pairs Export File for PCB: C:\Users\Guillem Ropero\Desktop\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc
 LayersSetName=Top_Bot_Thru_Holes|DrillFile=tsal_control.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_GND_Blind_Vias|DrillFile=tsal_control.tx1|DrillLayers=gtl,g1
+LayersSetName=Top_PWR_Blind_Vias|DrillFile=tsal_control.tx2|DrillLayers=gtl,g1,g2
+LayersSetName=GND_PWR_Buried_Vias|DrillFile=tsal_control.tx3|DrillLayers=g1,g2
+LayersSetName=GND_Bot_Blind_Vias|DrillFile=tsal_control.tx4|DrillLayers=g1,g2,gbl
+LayersSetName=PWR_Bot_Blind_Vias|DrillFile=tsal_control.tx5|DrillLayers=g2,gbl
