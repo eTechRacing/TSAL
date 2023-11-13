@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: TSAL_Control.PcbDoc   10/11/2023  17:49:37
+NCDrill File Report For: TSAL_Control.PcbDoc   13/11/2023  22:51:43
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,7 +7,7 @@ ASCII RoundHoles File : TSAL_Control.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)                                             Round             55        PTH        418.73mm (16.49inch)
+T1      0.3mm (12mil)                                             Round             57        PTH        426.32mm (16.78inch)
 T2      0.5mm (20mil)                                             Round             32        PTH        226.80mm (8.93inch)
 T3      0.8mm (31mil)                                             Round             11        PTH        129.17mm (5.09inch)
 T4      1mm (39mil)                                               Round             3         PTH        5.08mm (0.20inch)
@@ -18,6 +18,6 @@ T8      1.3mm (51mil)                                             Round         
 T9      1.5mm (59mil)                                             Round             4         PTH        48.06mm (1.89inch)
 T10     3.2mm (126mil)                                            Round             4         PTH        128.50mm (5.06inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              134
+Totals                                                                              136
 
 Total Processing Time (hh:mm:ss) : 00:00:00

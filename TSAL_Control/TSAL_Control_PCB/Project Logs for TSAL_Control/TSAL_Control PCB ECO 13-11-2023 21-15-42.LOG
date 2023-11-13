@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SC_End Pin=TP208-1
+Removed Pin From Net: NetName=SC_End Pin=U601-1
+Removed Pin From Net: NetName=SC_End Pin=U601-2
+Add Net: Net with name "SC_End" already exists
