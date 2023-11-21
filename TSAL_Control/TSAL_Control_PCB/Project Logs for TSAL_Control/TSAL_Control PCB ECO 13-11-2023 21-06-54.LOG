@@ -1,0 +1,5 @@
+Add Component: Footprint Not Found DSC-0.5/40-SOD_323
+Add Pin To Net: Unknown Pin: Pin D201-A
+Add Pin To Net: Unknown Pin: Pin D201-K
+Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC
+Add Class Member: Failed to add class member : Component D201 CMDSH05-4 TR PBFREE

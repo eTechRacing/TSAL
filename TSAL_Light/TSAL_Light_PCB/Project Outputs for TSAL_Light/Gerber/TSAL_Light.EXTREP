@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: TSAL_Light.GBR   11/12/2022  2:50:16
+Gerber File Extension Report For: TSAL_Light.GBR   12/07/2023  20:35:54
 ------------------------------------------------------------------------------------------
 
 
@@ -14,10 +14,5 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
-.GM3                Top Component Outline                   
-.GM4                Bottom Component Outline                
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
 .GM                 Profile                                 
 ------------------------------------------------------------------------------------------

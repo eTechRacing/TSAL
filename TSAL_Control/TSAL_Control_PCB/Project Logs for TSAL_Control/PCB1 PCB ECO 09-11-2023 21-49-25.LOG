@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=AIR+_State Pin=U301-3
+Removed Pin From Net: NetName=Precharge_State Pin=U301-5
+Added Pin To Net: NetName=Precharge_State Pin=U301-3
+Added Pin To Net: NetName=AIR+_State Pin=U301-5
+Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC

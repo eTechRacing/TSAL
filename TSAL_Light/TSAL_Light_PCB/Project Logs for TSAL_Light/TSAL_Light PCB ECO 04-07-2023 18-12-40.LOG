@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=Thermal_pad Pin=D7-T
+Added Pin To Net: NetName=Thermal_pad Pin=D8-T
+Added Pin To Net: NetName=Thermal_pad Pin=D9-T
+Added Pin To Net: NetName=Thermal_pad Pin=D10-T
+Added Pin To Net: NetName=Thermal_pad Pin=D11-T
+Added Pin To Net: NetName=Thermal_pad Pin=D12-T
+Added Pin To Net: NetName=Thermal_pad Pin=D13-T
+Added Pin To Net: NetName=Thermal_pad Pin=D14-T
+Added Net: Name=Thermal_pad

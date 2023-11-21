@@ -1,0 +1,3 @@
+Change Footprint: Footprint Not Found J-N1x4
+Change Net Name : Old Net Name=Thermal_pad New Net Name=Thermal_pad2
+Added Net: Name=Thermal_pad
