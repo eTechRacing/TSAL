@@ -1,0 +1,78 @@
+Removed Pin From Net: NetName=+5 TS Pin=C903-1
+Removed Pin From Net: NetName=TS- Pin=C903-2
+Removed Pin From Net: NetName=+5 TS Pin=C904-1
+Removed Pin From Net: NetName=TS- Pin=C904-2
+Change Component Footprint: Designator=C903 Old Footprint=C10u-50V-1210FNPMLCC-X7R New Footprint=C1206FNPC-RW
+Change Component Footprint: Designator=C904 Old Footprint=C10u-50V-1210FNPMLCC-X7R New Footprint=C1206FNPC-RW
+Change Footprint: Footprint Not Found WCAP-CSGP_1210_L3.2W2.5H2.5
+Change Footprint: Footprint Not Found WCAP-CSGP_1210_L3.2W2.5H2.5
+Change Component Comment : Designator=C903 Old Comment=GRJ32ER71H106KE11L New Comment=885012208058
+Change Component Comment : Designator=C904 Old Comment=GRJ32ER71H106KE11L New Comment=885012208058
+Change component parameters: Designator = "C903" ("C903"); Footprint = "C10u-50V-1210FNPMLCC-X7R"; UniqueID = "\NGWAYQBA\VHLTFWDW" ("\NGWAYQBA\VHLTFWDW")
+Change component parameters (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Imperial)"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Metric)"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/catalog/datasheet/885012208058.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/catalog/en/WCAP-CSGP-25VDC#885012208058"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/885012208058.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/885012208058.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "0.126inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "885012208058"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0,11000, 10=0,10100, 100=0,09100, 500=0,08000 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "4375"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-8109-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness"; Value = "0.035inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "0.063inch"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C904" ("C904"); Footprint = "C10u-50V-1210FNPMLCC-X7R"; UniqueID = "\NGWAYQBA\MFXERIOM" ("\NGWAYQBA\MFXERIOM")
+Change component parameters (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Imperial)"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Metric)"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/catalog/datasheet/885012208058.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/catalog/en/WCAP-CSGP-25VDC#885012208058"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/885012208058.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/885012208058.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "0.126inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "885012208058"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0,11000, 10=0,10100, 100=0,09100, 500=0,08000 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "4375"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-8109-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness"; Value = "0.035inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "0.063inch"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TS- Pin=C903-1
+Added Pin To Net: NetName=+5 TS Pin=C903-2
+Added Pin To Net: NetName=TS- Pin=C904-1
+Added Pin To Net: NetName=+5 TS Pin=C904-2

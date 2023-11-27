@@ -1,0 +1,136 @@
+Removed Pin From Net: NetName=+12 Pin=C901-1
+Removed Pin From Net: NetName=GND Pin=C901-2
+Removed Pin From Net: NetName=GND Pin=C902-2
+Removed Pin From Net: NetName=GND Pin=DCDC901-2
+Removed Pin From Net: NetName=TS- Pin=DCDC901-5
+Removed Pin From Net: NetName=+5 TS Pin=J902-2
+Removed Pin From Net: NetName=+5 TS Pin=L902-2
+Removed Pin From Net: NetName=Safe_State_Unlatched_Undelayed Pin=Q401-G
+Removed Pin From Net: NetName=GND Pin=Q401-S
+Removed Pin From Net: NetName=+12 Pin=R401-1
+Removed Pin From Net: NetName=NetC401_2 Pin=TP408-1
+Removed Pin From Net: NetName=NetC401_2 Pin=U402-5
+Removed Pin From Net: NetName=Safe_State_Unlatched_Undelayed Pin=U402-6
+Removed Member From Class: ClassName=Red activation Member=DCDC901
+Removed Member From Class: ClassName=Red activation Member=J902
+Removed Member From Class: ClassName=Red activation Member=L902
+Removed Member From Class: ClassName=SCS and Implausabilities Member=Q401
+Change Footprint: Footprint Not Found WCAP-CSGP_1210_L3.2W2.5H2.5
+Change Footprint: Footprint Not Found WCAP-CSGP_1210_L3.2W2.5H2.5
+Change Component Footprint: Designator=L901 Old Footprint=L_47u-490mA_CF New Footprint=WE-PD2_4532
+Change Component Comment : Designator=L901 Old Comment=CDC5D23BNP-470KC New Comment=4.7µH, 1.82A
+Change Component Comment : Designator=C901 Old Comment=GRJ32ER71H106KE11L New Comment=4.7µF
+Change Component Comment : Designator=C902 Old Comment=GRJ32ER71H106KE11L New Comment=4.7µF
+Change component parameters: Designator = "C901" ("C901"); Footprint = "C10u-50V-1210FNPMLCC-X7R"; UniqueID = "\NGWAYQBA\GGNEFXHO" ("\NGWAYQBA\GGNEFXHO")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "4.7µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ceramic Type"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012209048?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012209048?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Resistance"; Value = "0.02GO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "885012209048"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "X7R1210475K050DFCT10000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C902" ("C902"); Footprint = "C10u-50V-1210FNPMLCC-X7R"; UniqueID = "\NGWAYQBA\GFFUOESV" ("\NGWAYQBA\GFFUOESV")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "4.7µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Size Code"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Multilayer Ceramic Chip Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ceramic Type"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/885012209048?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/885012209048?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dissipation Factor"; Value = "5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Resistance"; Value = "0.02GO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "885012209048"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WCAP-CSGP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technical Reference"; Value = "X7R1210475K050DFCT10000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L901" ("L901"); Footprint = "L_47u-490mA_CF"; UniqueID = "\NGWAYQBA\NEWPKBWP" ("\NGWAYQBA\NEWPKBWP")
+Change component parameters (AddParameter): Name = "Case/Size Code"; Value = "4532"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Unshielded Power Inductors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/744773047?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/744773047?ad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance"; Value = "0.059O"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance Max"; Value = "0.11O"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance"; Value = "4.7µH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "4.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "744773047"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Match Code"; Value = "WE-PD2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "1.82A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Saturation Current"; Value = "2.46A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Self Resonant Frequency"; Value = "50MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "4mm"; VariantName = "[No Variations]"
+Added Component: Designator=DCDC?(WPME-FISM_SIP-7_L19.6W7.05H10.2)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SIP-7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Isolated Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/177920524?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/177920524?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "12V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "13.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "10.8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isolation Voltage"; Value = "4000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "19.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "177920524"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WPME-FISM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Power"; Value = "1W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "7.05mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C401-1
+Added Pin To Net: NetName=GND Pin=C901-1
+Added Pin To Net: NetName=+12 Pin=C901-2
+Added Pin To Net: NetName=GND Pin=C902-1
+Added Pin To Net: NetName=+12 Pin=C902-2
+Added Pin To Net: NetName=+5 TS Pin=C903-1
+Added Pin To Net: NetName=GND Pin=DCDC?-2
+Added Pin To Net: NetName=TS- Pin=DCDC?-5
+Added Pin To Net: NetName=+5 TS Pin=DCDC?-7
+Added Pin To Net: NetName=Safe_State_Unlatched_Undelayed Pin=R401-1
+Added Pin To Net: NetName=Safe_State_Unlatched_Undelayed Pin=TP408-1
+Added Pin To Net: NetName=Safe_State_Unlatched_Undelayed Pin=U402-5
+Added Pin To Net: NetName=NetC401_2 Pin=U402-6
+Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC
+Added Pin To Net: NetName=NetDCDC?_1 Pin=DCDC?-1
+Added Pin To Net: NetName=NetDCDC?_1 Pin=J901-2
+Added Pin To Net: NetName=NetDCDC?_1 Pin=L901-2
+Added Net: Name=NetDCDC?_1
+Added Member To Class: ClassName=Red activation Member=Component DCDC? 12Vin, 5Vout
