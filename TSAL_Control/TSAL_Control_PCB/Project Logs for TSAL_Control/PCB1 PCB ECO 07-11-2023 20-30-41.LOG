@@ -1,7 +1,0 @@
-Added Component: Designator=MH3(Mounting_Hole_M3)
-Added Component: Designator=MH4(Mounting_Hole_M3)
-Added Pin To Net: NetName=GND Pin=MH3-1
-Added Pin To Net: NetName=GND Pin=MH4-1
-Change Net Name : Old Net Name=NOT_HV_ New Net Name=NOT_HV_||_NOT_SC
-Added Member To Class: ClassName=TSAL_Control Member=Component MH3 Mounting_Hole_M3
-Added Member To Class: ClassName=TSAL_Control Member=Component MH4 Mounting_Hole_M3

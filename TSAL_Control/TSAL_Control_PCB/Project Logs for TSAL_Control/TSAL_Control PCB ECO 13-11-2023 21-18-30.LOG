@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=SC_End Pin=D201-K
-Removed Pin From Net: NetName=SC_End Pin=R1-2
-Removed Pin From Net: NetName=SC_End Pin=R5-1
-Removed Pin From Net: NetName=SC_End Pin=X_DISCHARGE-4
-Added Pin To Net: NetName=SC_End Pin=U601-1
-Added Pin To Net: NetName=SC_End Pin=U601-2
-Add Net: Net with name "SC_End_24V" already exists
-Add Net: Net with name "SC_End" already exists

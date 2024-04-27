@@ -1,3 +1,0 @@
-Removed Pin From Net: NetName=TS_is_OFF Pin=TP301-1
-Removed Member From Class: ClassName=Normal operation Member=TP302
-Change Component Designator: OldDesignator=TP302 NewDesignator=TP301

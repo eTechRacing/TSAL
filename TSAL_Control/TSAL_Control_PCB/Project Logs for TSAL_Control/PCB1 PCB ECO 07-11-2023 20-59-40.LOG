@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=HV_Accumulator_State Pin=J1-4
-Removed Pin From Net: NetName=SC_End_24V Pin=J1-10
-Removed Pin From Net: NetName=TS_ON Pin=J1-11
-Removed Pin From Net: NetName=TS_OFF Pin=J1-12
-Added Pin To Net: NetName=SC_End_24V Pin=J1-8
-Added Pin To Net: NetName=TS_ON Pin=J1-10
-Added Pin To Net: NetName=TS_OFF Pin=J1-11
-Added Pin To Net: NetName=HV_Accumulator_State Pin=J1-16
