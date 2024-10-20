@@ -1,3 +1,0 @@
-Removed Pin From Net: NetName=TS_ON Pin=J1-6
-Added Pin To Net: NetName=TS_ON Pin=J1-5
-Add Net: Net with name "TS_OFF" already exists

@@ -1,0 +1,9 @@
+Change Footprint: Footprint Not Found J-N1x4
+Add Pin To Net: Unknown Pin: Pin D1-T
+Add Pin To Net: Unknown Pin: Pin D2-T
+Add Pin To Net: Unknown Pin: Pin D3-T
+Add Pin To Net: Unknown Pin: Pin D4-T
+Add Pin To Net: Unknown Pin: Pin D5-T
+Add Pin To Net: Unknown Pin: Pin D6-T
+Change Net Name : Old Net Name=Thermal_pad2 New Net Name=Thermal_pad
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Aqua

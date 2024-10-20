@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=VCC Pin=J1-1
+Removed Pin From Net: NetName=Red LEDs Pin=J1-2
+Removed Pin From Net: NetName=Green LEDs Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Member From Class: ClassName=SCH_V2.0 Member=J1
+Added Component: Designator=J*(J_NanoFit_1x4_V)
+Add component (AddParameter): Name = ".Creator"; Value = "DR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "105309-2104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1,30000, 10=1,15000, 25=1,11000, 50=1,07000, 100=1,02000, 250=0,94400 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1183"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "44AJ4572"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=J*-1
+Added Pin To Net: NetName=Red LEDs Pin=J*-2
+Added Pin To Net: NetName=Green LEDs Pin=J*-3
+Added Pin To Net: NetName=GND Pin=J*-4
+Change Net Color : Old Net Color=RGB(130, 120, 114) New Net Color=RGB(130, 120, 114)
+Change Net Color : Old Net Color=RGB(110, 255, 255) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=RGB(110, 255, 255) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=Yellow New Net Color=Yellow
+Change Net Color : Old Net Color=RGB(255, 110, 255) New Net Color=RGB(255, 110, 255)
+Added Member To Class: ClassName=SCH_V2.0 Member=Component J* 1053092104

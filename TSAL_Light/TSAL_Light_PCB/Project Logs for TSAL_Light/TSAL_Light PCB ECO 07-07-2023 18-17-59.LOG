@@ -1,0 +1,73 @@
+Removed Pin From Net: NetName=Green_LEDs Pin=D5-K
+Removed Pin From Net: NetName=Green_LEDs Pin=D6-K
+Removed Pin From Net: NetName=Red_LEDs Pin=D13-K
+Removed Pin From Net: NetName=Red_LEDs Pin=D14-K
+Added Component: Designator=F1(Fuse_1206)
+Add component (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CSA,cURus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "3216"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Fuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_437a_datasheet.pdf.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_437a_datasheet.pdf.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.mouser.es/ProductDetail/Littelfuse/0437001WRA?qs=DXv0QSHKF4z9CJhPXjxR%252BA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "Board Mount (Cartridge Style Excluded)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0437001.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1,52000, 5=1,47000, 10=1,37600, 50=1,13860, 100=0,94880, 250=0,92508, 500=0,78276, 1000=0,68788 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5820"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "F10001CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (AC)"; Value = "63V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "63V"; VariantName = "[No Variations]"
+Added Component: Designator=F2(Fuse_1206)
+Add component (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CSA,cURus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "3216"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Fuses"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_437a_datasheet.pdf.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_437a_datasheet.pdf.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.mouser.es/ProductDetail/Littelfuse/0437001WRA?qs=DXv0QSHKF4z9CJhPXjxR%252BA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fuse Type"; Value = "Board Mount (Cartridge Style Excluded)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0437001.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1,52000, 5=1,47000, 10=1,37600, 50=1,13860, 100=0,94880, 250=0,92508, 500=0,78276, 1000=0,68788 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5820"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "F10001CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (AC)"; Value = "63V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "63V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Green_LEDs Pin=F1-1
+Added Pin To Net: NetName=Red_LEDs Pin=F2-1
+Change Net Name : Old Net Name=Thermal_pad New Net Name=Thermal_pad
+Added Pin To Net: NetName=NetD5_K Pin=D5-K
+Added Pin To Net: NetName=NetD5_K Pin=D6-K
+Added Pin To Net: NetName=NetD5_K Pin=F1-2
+Added Net: Name=NetD5_K
+Added Pin To Net: NetName=NetD13_K Pin=D13-K
+Added Pin To Net: NetName=NetD13_K Pin=D14-K
+Added Pin To Net: NetName=NetD13_K Pin=F2-2
+Added Net: Name=NetD13_K
+Added Member To Class: ClassName=TSAL_Light Member=Component F1 0437001.WRA
+Added Member To Class: ClassName=TSAL_Light Member=Component F2 0437001.WRA
