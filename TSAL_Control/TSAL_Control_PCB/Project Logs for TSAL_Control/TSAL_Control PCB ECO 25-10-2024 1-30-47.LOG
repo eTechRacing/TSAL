@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=TS+_DCBus1 Pin=F3-1
+Removed Pin From Net: NetName=TS+_DCBus1 Pin=R709-1
+Change Net Name : Old Net Name=TS+_DCBus1 New Net Name=NetR907_1
+Change Net Color : Old Net Color=RGB(253, 131, 0) New Net Color=Default
+Added Pin To Net: NetName=TS+_DCBus1 Pin=F3-1
+Added Pin To Net: NetName=TS+_DCBus1 Pin=R709-1
+Added Net: Name=TS+_DCBus1

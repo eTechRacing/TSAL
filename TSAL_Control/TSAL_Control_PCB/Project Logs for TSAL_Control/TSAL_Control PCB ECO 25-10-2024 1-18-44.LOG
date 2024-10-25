@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=GND Pin=Q903-2
+Removed Pin From Net: NetName=TS- Pin=Q903-3
+Removed Pin From Net: NetName=TS- Pin=Q904-S
+Removed Pin From Net: NetName=SC_End Pin=R904-1
+Removed Pin From Net: NetName=TS- Pin=R906-2
+Removed Pin From Net: NetName=TS+_DCBus2 Pin=R911-1
+Removed Pin From Net: NetName=TS+_DCBus2 Pin=R912-1
+Removed Pin From Net: NetName=TS+_DCBus2 Pin=R913-1
+Removed Pin From Net: NetName=TS+_DCBus2 Pin=R914-1
+Removed Pin From Net: NetName=TS- Pin=Z902-A
+Removed Member From Class: ClassName=Discharge_circuit Member=J902
+Removed Member From Class: ClassName=Discharge_circuit Member=Q903
+Removed Member From Class: ClassName=Discharge_circuit Member=Q904
+Removed Member From Class: ClassName=Discharge_circuit Member=R904
+Removed Member From Class: ClassName=Discharge_circuit Member=R905
+Removed Member From Class: ClassName=Discharge_circuit Member=R906
+Removed Member From Class: ClassName=Discharge_circuit Member=R911
+Removed Member From Class: ClassName=Discharge_circuit Member=R912
+Removed Member From Class: ClassName=Discharge_circuit Member=R913
+Removed Member From Class: ClassName=Discharge_circuit Member=R914
+Removed Member From Class: ClassName=Discharge_circuit Member=Z902
+Added Member To Class: ClassName=Implausibilities Member=Component R203 R1K-0805-0.5W

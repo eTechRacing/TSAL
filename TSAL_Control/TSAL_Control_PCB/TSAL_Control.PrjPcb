@@ -66,23 +66,6 @@ GenerateClassCluster=0
 DocumentUniqueId=MUSAZMGH
 
 [Document2]
-DocumentPath=[1] TSAL_Green.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NVCRUPIA
-
-[Document3]
 DocumentPath=[2] Implausibilities.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -98,6 +81,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EQTOHJWW
+
+[Document3]
+DocumentPath=[1] TSAL_Green.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NVCRUPIA
 
 [Document4]
 DocumentPath=[3] Relay Implausibility.SchDoc
@@ -168,7 +168,7 @@ GenerateClassCluster=0
 DocumentUniqueId=TXQTDSLT
 
 [Document8]
-DocumentPath=[4] EV 4.10.14.SchDoc
+DocumentPath=[4] NoHV_RelaysClosed.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -200,6 +200,64 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WICOZDJH
+
+[Document10]
+DocumentPath=TSAL_Control.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YDFCATMN
+
+[Document11]
+DocumentPath=[9] Discharge_Circuit.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QPSWLSBK
+
+[Parameter1]
+Name=Company
+Value=e-Tech Racing
+
+[Parameter2]
+Name=DesignedbyURL
+Value=e-techracing.es
+
+[Parameter3]
+Name=DesignerMail
+Value=guillemroper@gmail.com
+
+[Parameter4]
+Name=DesignerName
+Value=Guillem Ropero Serrano
+
+[Parameter5]
+Name=Project
+Value=TSAL Control
+
+[Parameter6]
+Name=ReviewerName
+Value=
 
 [Configuration1]
 Name=Sources
@@ -1233,18 +1291,33 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=AIR-_Coil_24V|NetColor=$00FF6EFF
-Net2=NetName=AIR-_State|NetColor=$006EFF6E
-Net3=NetName=AIR+_Coil_24V|NetColor=$00FF6EFF
-Net4=NetName=AIR+_State|NetColor=$006EFF6E
-Net5=NetName=GND|NetColor=$000A0F11
-Net6=NetName=HV_Accumulator|NetColor=$006EFF6E
-Net7=NetName=LV+_in|NetColor=$006E6EFF
-Net8=NetName=Precharge_Coil_24V|NetColor=$00FF6EFF
-Net9=NetName=Precharge_State|NetColor=$006EFF6E
-Net10=NetName=SC_End_24V|NetColor=$00FF6EFF
-Net11=NetName=TS_Off|NetColor=$0000BE00
-Net12=NetName=TS_On|NetColor=$0034008D
+Net1=NetName=+12|NetColor=$00FF6EFF
+Net2=NetName=AIR-_Coil|NetColor=$00FFFF6E
+Net3=NetName=AIR-_Coil_24V|NetColor=$00FF6EFF
+Net4=NetName=AIR-_Coil_30V|NetColor=$00FF6E6E
+Net5=NetName=AIR-_State|NetColor=$006EFF6E
+Net6=NetName=AIR+_Coil|NetColor=$00FFFF6E
+Net7=NetName=AIR+_Coil_24V|NetColor=$00FF6EFF
+Net8=NetName=AIR+_Coil_30V|NetColor=$00FF6E6E
+Net9=NetName=AIR+_State|NetColor=$006EFF6E
+Net10=NetName=GND|NetColor=$000A0F11
+Net11=NetName=HV_Accumulator|NetColor=$006EFF6E
+Net12=NetName=LV+_in|NetColor=$006E6EFF
+Net13=NetName=Precharge_Coil|NetColor=$00FFFF6E
+Net14=NetName=Precharge_Coil_24V|NetColor=$00FF6EFF
+Net15=NetName=Precharge_Coil_30V|NetColor=$00FF6E6E
+Net16=NetName=Precharge_State|NetColor=$006EFF6E
+Net17=NetName=SC_End|NetColor=$00FFFF6E
+Net18=NetName=SC_End_24V|NetColor=$00FF6EFF
+Net19=NetName=SC_End_30V|NetColor=$00FF6E6E
+Net20=NetName=TS-|NetColor=$000083FD
+Net21=NetName=TS_Off|NetColor=$0000BE00
+Net22=NetName=TS_On|NetColor=$0034008D
+Net23=NetName=TS-_Unfused|NetColor=$000083FD
+Net24=NetName=TS+_DCBus1|NetColor=$000083FD
+Net25=NetName=TS+_DCBus1_Unfused|NetColor=$000083FD
+Net26=NetName=TS+_DCBus2|NetColor=$000083FD
+Net27=NetName=TS+_DCBus2_Unfused|NetColor=$000083FD
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0

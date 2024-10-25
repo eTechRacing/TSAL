@@ -1,0 +1,56 @@
+Change Component Footprint: Designator=R708 Old Footprint=R10k-VTR New Footprint=T93Z103KT20
+Change Component Comment : Designator=R708 Old Comment=R10k-VTR New Comment=R10k-VTR_Horizontal
+Change Managed Component Library Link : Designator=R708 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=71C00B85-2A4B-4ABC-9031-43AF3CBFCC3C New ItemGUID=4dfde260-e8f3-48b5-a2e6-193e2b265fd5 Old RevisionGUID=E4663587-7345-4B1E-B1D7-3B595BCE3043 New RevisionGUID=77bffcc6-5d7d-46b5-a72c-8b8cc77b13ff
+Change component parameters: Designator = "R708" ("R708"); Footprint = "R10k-VTR"; UniqueID = "\EOUVXMZI\FGZUQAVN" ("\EOUVXMZI\FGZUQAVN")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Clock Frequency"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gender"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "I/Os"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Interface"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Current Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Supply Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Nominal Supply Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "500mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RAM Size"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found Fuse_485001
+Add Component: Footprint Not Found Fuse_485001
+Add Component: Footprint Not Found Fuse_485001
+Add Component: Footprint Not Found J_MicroFit_2x1
+Add Component: Footprint Not Found J_MicroFit_2x1
+Add Component: Footprint Not Found J_MicroFit_2x1
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS1-1
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS1-2
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS?-1
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS?-2
+Add Pin To Net: Unknown Pin: Pin F_TS-?-1
+Add Pin To Net: Unknown Pin: Pin F_TS-?-2
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS1-1
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS1-2
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS?-1
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS?-2
+Add Pin To Net: Unknown Pin: Pin J_TS--1
+Add Pin To Net: Unknown Pin: Pin J_TS--2
+Add Net: Net with name "AIR-_State" already exists
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class Member: Failed to add class member : Component F_DC_BUS1 485001
+Add Class Member: Failed to add class member : Component F_DC_BUS? 485001
+Add Class Member: Failed to add class member : Component F_TS-? 485001
+Add Class Member: Failed to add class member : Component J_TS+_DC_BUS1 436500215
+Add Class Member: Failed to add class member : Component J_TS+_DC_BUS? 436500215
+Add Class Member: Failed to add class member : Component J_TS- 436500215

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=TS+_DCBus1 Pin=R907-1
+Removed Pin From Net: NetName=TS+_DCBus1 Pin=R908-1
+Removed Pin From Net: NetName=TS+_DCBus1 Pin=R909-1
+Removed Pin From Net: NetName=TS+_DCBus1 Pin=R910-1
+Added Pin To Net: NetName=TS+_DCBus1_Unfused Pin=R907-1
+Added Pin To Net: NetName=TS+_DCBus1_Unfused Pin=R908-1
+Added Pin To Net: NetName=TS+_DCBus1_Unfused Pin=R909-1
+Added Pin To Net: NetName=TS+_DCBus1_Unfused Pin=R910-1
