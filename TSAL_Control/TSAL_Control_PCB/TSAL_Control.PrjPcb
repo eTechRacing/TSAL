@@ -1318,6 +1318,8 @@ Net24=NetName=TS+_DCBus1|NetColor=$000083FD
 Net25=NetName=TS+_DCBus1_Unfused|NetColor=$000083FD
 Net26=NetName=TS+_DCBus2|NetColor=$000083FD
 Net27=NetName=TS+_DCBus2_Unfused|NetColor=$000083FD
+Net28=NetName=TSAL_Green|NetColor=clLime
+Net29=NetName=TSAL_Red|NetColor=clRed
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
