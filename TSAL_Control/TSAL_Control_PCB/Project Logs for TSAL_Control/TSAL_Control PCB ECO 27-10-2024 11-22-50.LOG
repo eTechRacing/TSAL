@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=TSAL_Green Pin=R601-1
+Removed Pin From Net: NetName=TS_Off Pin=R603-1
+Removed Pin From Net: NetName=+5TS Pin=R707-1
+Removed Pin From Net: NetName=Out_HV_Comparator Pin=R707-2
+Removed Pin From Net: NetName=TSAL_Red Pin=R801-1
+Removed Pin From Net: NetName=TS_On Pin=R803-1
+Removed Pin From Net: NetName=TSAL_Green Pin=U101-6
+Removed Pin From Net: NetName=TSAL_Red Pin=U703-3
+Removed Member From Class: ClassName=TSAL Red Member=R707
+Added Pin To Net: NetName=TS_Off Pin=R601-1
+Added Pin To Net: NetName=TSAL_Green Pin=R603-1
+Added Pin To Net: NetName=TS_On Pin=R801-1
+Added Pin To Net: NetName=TSAL_Red Pin=R803-1
+Added Pin To Net: NetName=TS_Off Pin=U101-6
+Added Pin To Net: NetName=TS_On Pin=U703-3
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Lime
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Red

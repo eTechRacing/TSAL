@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=AIR+_State Pin=J1-1
+Removed Pin From Net: NetName=AIR-_State Pin=J1-2
+Removed Pin From Net: NetName=Precharge_State Pin=J1-3
+Removed Pin From Net: NetName=HV_Accumulator Pin=J1-9
+Removed Pin From Net: NetName=HV_Accumulator Pin=U101-1
+Removed Pin From Net: NetName=AIR+_State Pin=U101-2
+Removed Pin From Net: NetName=Precharge_State Pin=U101-3
+Removed Pin From Net: NetName=AIR-_State Pin=U101-8
+Added Pin To Net: NetName=Precharge_State Pin=J1-1
+Added Pin To Net: NetName=AIR+_State Pin=J1-2
+Added Pin To Net: NetName=HV_Accumulator Pin=J1-3
+Added Pin To Net: NetName=AIR-_State Pin=J1-9
+Added Pin To Net: NetName=Precharge_State Pin=U101-1
+Added Pin To Net: NetName=AIR-_State Pin=U101-2
+Added Pin To Net: NetName=AIR+_State Pin=U101-3
+Added Pin To Net: NetName=HV_Accumulator Pin=U101-8

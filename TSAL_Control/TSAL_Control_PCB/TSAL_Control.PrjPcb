@@ -235,6 +235,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QPSWLSBK
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for TSAL_Control\Design Rule Check - TSAL_Control.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Company
 Value=e-Tech Racing

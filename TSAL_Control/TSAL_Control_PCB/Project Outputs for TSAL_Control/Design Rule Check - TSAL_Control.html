@@ -1,0 +1,787 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">29/10/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:31:49</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc" class="file"><acronym title="E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc">E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">149</td></tr>
+</table>
+</td>
+</table><a name="IDRFEZ1LO2KX32LZVJ3BXA11351LRNIKI2LLOOENKTDK5OP5FTJD3B"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFFNC3VJ0DV4WJOOHM031U2ZIYDUKHNFUL2R1QHMRVLQZQIDJVCBJ">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4FIAFME5TMIYLPLFJ0VWW5ROTP1YBYA10OWPINMHB1NGP0DMXFGD">Clearance Constraint (Gap=4mm) (InNetClass('TS')),(InNetClass('LVS'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5K0OPAGXDICCKJZWFEUPLSMJAD2CKLKY40W1L3DZQKGB33KRR50K">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDF5L2TJQEKVRJIY2LBWJNABHYGMZRBRBUR5CYGLH1TCOMS2Q2N3YN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXBAT0PFOUL3WK31XGNCL0VEQMEWMCWDYM13OQVH0PVQNDOU2XVGO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVPTQ0XIUYEX3L3CYFQ253HKXKOXA5STZYEE4NOSDXZG5UARJTML">Width Constraint (Min=0.2mm) (Max=3mm) (Preferred=0.5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHU21Z3IGSRXBNRKKGS1EGMOWHKPDTHRIKHA3TNH1VZ40YZWXB0WE">Power Plane Connect Rule(Relief Connect )(Expansion=0.5mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDV53U521T0OEBHL4ZG3X15L0U1CCA2OAI4WZB3BEDE5URGFFPI0IC">Hole Size Constraint (Min=0.2mm) (Max=4mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRI2EJT3PFOWTPDCMJGUJ5JO20BARSUAJIBWN3YPZB1NUOJHLXAMI">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVZHUEHGUWPGZL02S4KOZKIBNRCG3MMBABT4P10IVZQARXKVVCO4I">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID332MLRIIYSS0BIK4ULGVPFL1OIDPX3WYO1VPAIIUVIO2JGR3NYZK">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</a></td>
+<td class="column2">121</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXFTTRW03CFY5DYEM4OJKPHOBEPFY5IGKSBUKHQIMDZESUVWTWERI">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDD11GQWURUM5WOXPWS43VF4K3AIETLCASAVBVYXLUTBT4Z03PHLEF">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">16</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDN24UH05XAZXJL2GFZSOHMCRYUG3ACBZCMM0YUEPGAALSYWI0EKHO">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">149</td>
+</tr>
+</table><br><a name="IDVZHUEHGUWPGZL02S4KOZKIBNRCG3MMBABT4P10IVZQARXKVVCO4I"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1646.048mil|Location2.X=1657.298mil|Location1.Y=2376.265mil|Location2.Y=2387.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1646.048mil|Location2.X=1657.298mil|Location1.Y=2376.265mil|Location2.Y=2387.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.005mm &lt; 0.254mm) Between Pad C703-2(42.505mm,60.555mm) on Bottom Layer And Via (41.5mm,60.5mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.005mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2770.262mil|Location2.X=2781.512mil|Location1.Y=1891.598mil|Location2.Y=1902.848mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2770.262mil|Location2.X=2781.512mil|Location1.Y=1891.598mil|Location2.Y=1902.848mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.012mm &lt; 0.254mm) Between Pad J1-4(71.25mm,47.369mm) on Multi-Layer And Pad J1-A(70mm,48.75mm) on Multi-Layer [Top Solder] Mask Sliver [0.012mm] / [Bottom Solder] Mask Sliver [0.012mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2730.298mil|Location2.X=2741.548mil|Location1.Y=1891.598mil|Location2.Y=1902.848mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2730.298mil|Location2.X=2741.548mil|Location1.Y=1891.598mil|Location2.Y=1902.848mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.012mm &lt; 0.254mm) Between Pad J1-5(68.75mm,47.369mm) on Multi-Layer And Pad J1-A(70mm,48.75mm) on Multi-Layer [Top Solder] Mask Sliver [0.012mm] / [Bottom Solder] Mask Sliver [0.012mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2979.119mil|Location2.X=2990.369mil|Location1.Y=2282.269mil|Location2.Y=2293.519mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2979.119mil|Location2.X=2990.369mil|Location1.Y=2282.269mil|Location2.Y=2293.519mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.254mm) Between Pad Q201-G(76.575mm,57.95mm) on Top Layer And Pad R201-1(75mm,57.925mm) on Top Layer [Top Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2979.119mil|Location2.X=2990.369mil|Location1.Y=2207.466mil|Location2.Y=2218.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2979.119mil|Location2.X=2990.369mil|Location1.Y=2207.466mil|Location2.Y=2218.716mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.254mm) Between Pad Q201-S(76.575mm,56.05mm) on Top Layer And Pad R201-2(75mm,56.075mm) on Top Layer [Top Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=671.54mil|Location2.X=682.79mil|Location1.Y=1593.784mil|Location2.Y=1605.034mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=671.54mil|Location2.X=682.79mil|Location1.Y=1593.784mil|Location2.Y=1605.034mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.254mm) Between Pad Q902-g(17.525mm,42.68mm) on Bottom Layer And Pad R903-1(16.4mm,39.5mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=535.123mil|Location2.X=546.373mil|Location1.Y=1593.784mil|Location2.Y=1605.034mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=535.123mil|Location2.X=546.373mil|Location1.Y=1593.784mil|Location2.Y=1605.034mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.254mm) Between Pad Q902-S(12.475mm,42.68mm) on Bottom Layer And Pad R903-2(13.6mm,39.5mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1742.253mil|Location2.X=1753.503mil|Location1.Y=1895.052mil|Location2.Y=1907.762mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1742.253mil|Location2.X=1753.503mil|Location1.Y=1895.052mil|Location2.Y=1907.762mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.009mm &lt; 0.254mm) Between Pad R1-1(45.075mm,47.5mm) on Top Layer And Via (44mm,48.5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.009mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3795.09mil|Location2.X=3806.34mil|Location1.Y=1943.194mil|Location2.Y=1954.444mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3795.09mil|Location2.X=3806.34mil|Location1.Y=1943.194mil|Location2.Y=1954.444mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.024mm &lt; 0.254mm) Between Pad R4-1(95.801mm,49.508mm) on Top Layer And Via (97mm,49.5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.024mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2912.004mil|Location2.X=2923.254mil|Location1.Y=2402.948mil|Location2.Y=2414.526mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2912.004mil|Location2.X=2923.254mil|Location1.Y=2402.948mil|Location2.Y=2414.526mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.105mm &lt; 0.254mm) Between Pad U201-14(73.275mm,60.81mm) on Bottom Layer And Via (74.5mm,61.5mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.105mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2612.485mil|Location2.X=2623.735mil|Location1.Y=2081.186mil|Location2.Y=2092.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2612.485mil|Location2.X=2623.735mil|Location1.Y=2081.186mil|Location2.Y=2092.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.11mm &lt; 0.254mm) Between Pad U202-14(66.5mm,53.46mm) on Top Layer And Via (66.5mm,52.5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.11mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.112mil|Location2.X=2870.83mil|Location1.Y=2416.977mil|Location2.Y=2428.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.112mil|Location2.X=2870.83mil|Location1.Y=2416.977mil|Location2.Y=2428.227mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.168mm &lt; 0.254mm) Between Pad U202-7(71.95mm,61.08mm) on Top Layer And Via (73mm,62mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.168mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID332MLRIIYSS0BIK4ULGVPFL1OIDPX3WYO1VPAIIUVIO2JGR3NYZK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=689.789mil|Location2.X=696.038mil|Location1.Y=1315.773mil|Location2.Y=1322.022mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=689.789mil|Location2.X=696.038mil|Location1.Y=1315.773mil|Location2.Y=1322.022mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Arc (17.5mm,33.5mm) on Bottom Overlay And Pad R902-1(17mm,34.1mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2328.568mil|Location2.X=2334.818mil|Location1.Y=2823.057mil|Location2.Y=2829.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2328.568mil|Location2.X=2334.818mil|Location1.Y=2823.057mil|Location2.Y=2829.306mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Arc (59.225mm,71.66mm) on Bottom Overlay And Pad R501-1(59.575mm,72.5mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2559.814mil|Location2.X=2566.063mil|Location1.Y=2498.844mil|Location2.Y=2505.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2559.814mil|Location2.X=2566.063mil|Location1.Y=2498.844mil|Location2.Y=2505.093mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C202-2(65.5mm,64mm) on Top Layer And Text "R601" (60.274mm,62.535mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1065.576mil|Location2.X=1071.825mil|Location1.Y=2229.159mil|Location2.Y=2235.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1065.576mil|Location2.X=1071.825mil|Location1.Y=2229.159mil|Location2.Y=2235.408mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C701-1(26.5mm,56.45mm) on Top Layer And Track (27.145mm,56.7mm)(27.145mm,64mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1065.576mil|Location2.X=1071.825mil|Location1.Y=2229.159mil|Location2.Y=2235.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1065.576mil|Location2.X=1071.825mil|Location1.Y=2229.159mil|Location2.Y=2235.408mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C701-1(26.5mm,56.45mm) on Top Layer And Track (27.145mm,56.7mm)(28.495mm,56.7mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1761.875mil|Location2.X=1768.125mil|Location1.Y=2483.096mil|Location2.Y=2489.345mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1761.875mil|Location2.X=1768.125mil|Location1.Y=2483.096mil|Location2.Y=2489.345mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C704-1(44.4mm,62.5mm) on Bottom Layer And Text "C703" (44.831mm,62.154mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1672.671mil|Location2.X=1678.92mil|Location1.Y=2483.096mil|Location2.Y=2489.345mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1672.671mil|Location2.X=1678.92mil|Location1.Y=2483.096mil|Location2.Y=2489.345mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C704-2(42.5mm,62.5mm) on Bottom Layer And Text "C703" (44.831mm,62.154mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1953.726mil|Location2.X=1962.85mil|Location1.Y=1663.616mil|Location2.Y=1673.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1953.726mil|Location2.X=1962.85mil|Location1.Y=1663.616mil|Location2.Y=1673.18mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.193mm &lt; 0.2mm) Between Pad C705-1(49mm,41.9mm) on Bottom Layer And Track (49.925mm,42.45mm)(49.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.193mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1953.726mil|Location2.X=1962.85mil|Location1.Y=1663.616mil|Location2.Y=1673.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1953.726mil|Location2.X=1962.85mil|Location1.Y=1663.616mil|Location2.Y=1673.18mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.193mm &lt; 0.2mm) Between Pad C705-1(49mm,41.9mm) on Bottom Layer And Track (49.925mm,42.45mm)(53.925mm,42.45mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.193mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1939.863mil|Location2.X=1946.112mil|Location1.Y=1589.395mil|Location2.Y=1595.644mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1939.863mil|Location2.X=1946.112mil|Location1.Y=1589.395mil|Location2.Y=1595.644mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C705-2(49mm,40mm) on Bottom Layer And Text "R802" (50.875mm,40.853mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2224.769mil|Location2.X=2233.893mil|Location1.Y=1320.239mil|Location2.Y=1329.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2224.769mil|Location2.X=2233.893mil|Location1.Y=1320.239mil|Location2.Y=1329.363mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.2mm) Between Pad D2-A(57mm,34.25mm) on Top Layer And Track (56.1mm,33.5mm)(57.9mm,33.5mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2221.173mil|Location2.X=2227.422mil|Location1.Y=1191.875mil|Location2.Y=1198.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2221.173mil|Location2.X=2227.422mil|Location1.Y=1191.875mil|Location2.Y=1198.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad D2-K(57mm,30.75mm) on Top Layer And Text "C1" (54.788mm,30.353mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2224.769mil|Location2.X=2233.893mil|Location1.Y=1229.693mil|Location2.Y=1238.816mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2224.769mil|Location2.X=2233.893mil|Location1.Y=1229.693mil|Location2.Y=1238.816mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.2mm) Between Pad D2-K(57mm,30.75mm) on Top Layer And Track (56.1mm,31.5mm)(57.9mm,31.5mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3001.346mil|Location2.X=3010.47mil|Location1.Y=2835.005mil|Location2.Y=2844.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3001.346mil|Location2.X=3010.47mil|Location1.Y=2835.005mil|Location2.Y=2844.129mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.2mm) Between Pad D501-A(75.75mm,72.5mm) on Bottom Layer And Track (76.5mm,71.6mm)(76.5mm,73.4mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3091.892mil|Location2.X=3101.016mil|Location1.Y=2835.005mil|Location2.Y=2844.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3091.892mil|Location2.X=3101.016mil|Location1.Y=2835.005mil|Location2.Y=2844.129mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.2mm) Between Pad D501-K(79.25mm,72.5mm) on Bottom Layer And Track (78.5mm,71.6mm)(78.5mm,73.4mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=136.863mil|Location2.X=143.112mil|Location1.Y=1181.856mil|Location2.Y=1188.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=136.863mil|Location2.X=143.112mil|Location1.Y=1181.856mil|Location2.Y=1188.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad F2-2(6.2mm,30.375mm) on Top Layer And Text "J2" (2.54mm,28.575mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=473.863mil|Location2.X=480.112mil|Location1.Y=1176.856mil|Location2.Y=1183.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=473.863mil|Location2.X=480.112mil|Location1.Y=1176.856mil|Location2.Y=1183.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad F3-2(14.75mm,30.375mm) on Top Layer And Text "J3" (11.1mm,28.448mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=455.536mil|Location2.X=461.785mil|Location1.Y=2626.856mil|Location2.Y=2633.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=455.536mil|Location2.X=461.785mil|Location1.Y=2626.856mil|Location2.Y=2633.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad F4-2(13.9mm,69.5mm) on Top Layer And Text "R708" (9.931mm,65.278mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=213.949mil|Location2.X=220.198mil|Location1.Y=988.602mil|Location2.Y=994.851mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=213.949mil|Location2.X=220.198mil|Location1.Y=988.602mil|Location2.Y=994.851mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J2-1(4.9mm,25.78mm) on Multi-Layer And Text "F2" (5.895mm,25.952mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=545.59mil|Location2.X=551.84mil|Location1.Y=988.601mil|Location2.Y=994.851mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=545.59mil|Location2.X=551.84mil|Location1.Y=988.601mil|Location2.Y=994.851mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J3-1(13.475mm,25.65mm) on Multi-Layer And Text "F3" (14.445mm,25.952mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1841.875mil|Location2.X=1848.125mil|Location1.Y=1992.934mil|Location2.Y=1999.183mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1841.875mil|Location2.X=1848.125mil|Location1.Y=1992.934mil|Location2.Y=1999.183mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J701-1(46.5mm,51.5mm) on Multi-Layer And Text "R704" (46.863mm,50.444mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1960.862mil|Location2.X=1967.112mil|Location1.Y=2011.502mil|Location2.Y=2017.751mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1960.862mil|Location2.X=1967.112mil|Location1.Y=2011.502mil|Location2.Y=2017.751mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J701-2(49.04mm,51.5mm) on Multi-Layer And Text "Q1" (48.87mm,50.267mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1994.526mil|Location2.X=2003.65mil|Location1.Y=2022.997mil|Location2.Y=2032.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1994.526mil|Location2.X=2003.65mil|Location1.Y=2022.997mil|Location2.Y=2032.121mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.006mm &lt; 0.2mm) Between Pad J701-3(51.58mm,51.5mm) on Multi-Layer And Text "Q1" (48.87mm,50.267mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2026.288mil|Location2.X=2035.412mil|Location1.Y=1989.925mil|Location2.Y=1999.049mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2026.288mil|Location2.X=2035.412mil|Location1.Y=1989.925mil|Location2.Y=1999.049mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.079mm &lt; 0.2mm) Between Pad J701-3(51.58mm,51.5mm) on Multi-Layer And Text "U703" (55.397mm,48.97mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.079mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3098.824mil|Location2.X=3105.073mil|Location1.Y=2247.368mil|Location2.Y=2253.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3098.824mil|Location2.X=3105.073mil|Location1.Y=2247.368mil|Location2.Y=2253.617mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q201-D(79.425mm,57mm) on Top Layer And Text "R203" (74.727mm,56.744mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3031.7mil|Location2.X=3037.949mil|Location1.Y=2263.719mil|Location2.Y=2269.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3031.7mil|Location2.X=3037.949mil|Location1.Y=2263.719mil|Location2.Y=2269.968mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q201-G(76.575mm,57.95mm) on Top Layer And Text "R203" (74.727mm,56.744mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2814.807mil|Location2.X=2821.057mil|Location1.Y=2698.642mil|Location2.Y=2704.891mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2814.807mil|Location2.X=2821.057mil|Location1.Y=2698.642mil|Location2.Y=2704.891mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q202-D(71.35mm,68.95mm) on Top Layer And Text "R204" (66.243mm,67.742mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2693.409mil|Location2.X=2702.533mil|Location1.Y=2731.012mil|Location2.Y=2740.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2693.409mil|Location2.X=2702.533mil|Location1.Y=2731.012mil|Location2.Y=2740.136mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.183mm &lt; 0.2mm) Between Pad Q202-G(68.5mm,69.9mm) on Top Layer And Text "R204" (66.243mm,67.742mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.183mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2704.843mil|Location2.X=2711.092mil|Location1.Y=2663.875mil|Location2.Y=2670.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2704.843mil|Location2.X=2711.092mil|Location1.Y=2663.875mil|Location2.Y=2670.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q202-S(68.5mm,68mm) on Top Layer And Text "R204" (66.243mm,67.742mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2319.706mil|Location2.X=2325.955mil|Location1.Y=2605.856mil|Location2.Y=2612.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2319.706mil|Location2.X=2325.955mil|Location1.Y=2605.856mil|Location2.Y=2612.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q601-G(60.5mm,65.928mm) on Top Layer And Text "R602" (58.471mm,64.745mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2382.438mil|Location2.X=2391.562mil|Location1.Y=2803.499mil|Location2.Y=2812.623mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2382.438mil|Location2.X=2391.562mil|Location1.Y=2803.499mil|Location2.Y=2812.623mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.149mm &lt; 0.2mm) Between Pad Q601-S(60.5mm,70.5mm) on Top Layer And Text "R202" (60.63mm,71.526mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.149mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1237.437mil|Location2.X=1243.687mil|Location1.Y=1938.875mil|Location2.Y=1945.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1237.437mil|Location2.X=1243.687mil|Location1.Y=1938.875mil|Location2.Y=1945.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q703-1(31.85mm,49.815mm) on Top Layer And Text "R712" (26.772mm,49.327mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1648.312mil|Location2.X=1654.561mil|Location1.Y=1842.574mil|Location2.Y=1848.823mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1648.312mil|Location2.X=1654.561mil|Location1.Y=1842.574mil|Location2.Y=1848.823mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q703-3(41.35mm,47.275mm) on Top Layer And Text "R1" (43.47mm,46.771mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=727.875mil|Location2.X=734.125mil|Location1.Y=1631.875mil|Location2.Y=1638.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=727.875mil|Location2.X=734.125mil|Location1.Y=1631.875mil|Location2.Y=1638.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q902-g(17.525mm,42.68mm) on Bottom Layer And Text "R903" (18.567mm,41.529mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=537.937mil|Location2.X=544.186mil|Location1.Y=1691.856mil|Location2.Y=1698.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=537.937mil|Location2.X=544.186mil|Location1.Y=1691.856mil|Location2.Y=1698.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad Q902-S(12.475mm,42.68mm) on Bottom Layer And Text "R903" (18.567mm,41.529mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.962mil|Location2.X=3750.211mil|Location1.Y=2116.82mil|Location2.Y=2123.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.962mil|Location2.X=3750.211mil|Location1.Y=2116.82mil|Location2.Y=2123.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-1(95.801mm,54.5mm) on Top Layer And Text "R9" (93.04mm,53.847mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=2116.82mil|Location2.Y=2123.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=2116.82mil|Location2.Y=2123.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-2(93.701mm,54.5mm) on Top Layer And Text "R9" (93.04mm,53.847mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2921.827mil|Location2.X=2928.076mil|Location1.Y=2256.856mil|Location2.Y=2263.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2921.827mil|Location2.X=2928.076mil|Location1.Y=2256.856mil|Location2.Y=2263.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R201-1(75mm,57.925mm) on Top Layer And Text "C201" (70.485mm,55.88mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2938.875mil|Location2.X=2945.125mil|Location1.Y=2254.749mil|Location2.Y=2260.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2938.875mil|Location2.X=2945.125mil|Location1.Y=2254.749mil|Location2.Y=2260.999mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R201-1(75mm,57.925mm) on Top Layer And Text "R203" (74.727mm,56.744mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2931.824mil|Location2.X=2938.073mil|Location1.Y=2227.19mil|Location2.Y=2233.44mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2931.824mil|Location2.X=2938.073mil|Location1.Y=2227.19mil|Location2.Y=2233.44mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R201-2(75mm,56.075mm) on Top Layer And Text "C201" (70.485mm,55.88mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2938.875mil|Location2.X=2945.125mil|Location1.Y=2230.875mil|Location2.Y=2237.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2938.875mil|Location2.X=2945.125mil|Location1.Y=2230.875mil|Location2.Y=2237.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R201-2(75mm,56.075mm) on Top Layer And Text "R203" (74.727mm,56.744mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2604.875mil|Location2.X=2611.125mil|Location1.Y=2723.856mil|Location2.Y=2730.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2604.875mil|Location2.X=2611.125mil|Location1.Y=2723.856mil|Location2.Y=2730.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R202-1(65.5mm,69.925mm) on Top Layer And Text "R204" (66.243mm,67.742mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2564.298mil|Location2.X=2570.547mil|Location1.Y=2654.356mil|Location2.Y=2660.605mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2564.298mil|Location2.X=2570.547mil|Location1.Y=2654.356mil|Location2.Y=2660.605mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R202-2(65.5mm,68.075mm) on Top Layer And Text "C202" (60.477mm,67.335mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2604.875mil|Location2.X=2611.125mil|Location1.Y=2699.631mil|Location2.Y=2705.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2604.875mil|Location2.X=2611.125mil|Location1.Y=2699.631mil|Location2.Y=2705.881mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R202-2(65.5mm,68.075mm) on Top Layer And Text "R204" (66.243mm,67.742mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.285mil|Location2.X=3102.534mil|Location1.Y=2181.915mil|Location2.Y=2188.164mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.285mil|Location2.X=3102.534mil|Location1.Y=2181.915mil|Location2.Y=2188.164mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R203-1(79.5mm,55.05mm) on Top Layer And Track (77.6mm,55.5mm)(78.8mm,55.5mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3099.238mil|Location2.X=3105.487mil|Location1.Y=2181.915mil|Location2.Y=2188.164mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3099.238mil|Location2.X=3105.487mil|Location1.Y=2181.915mil|Location2.Y=2188.164mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R203-1(79.5mm,55.05mm) on Top Layer And Track (78.8mm,55.5mm)(78.8mm,56.275mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2761.639mil|Location2.X=2767.888mil|Location1.Y=2517.662mil|Location2.Y=2523.911mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2761.639mil|Location2.X=2767.888mil|Location1.Y=2517.662mil|Location2.Y=2523.911mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R204-2(71mm,63.95mm) on Top Layer And Text "U202" (67.107mm,62.687mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1821.82mil|Location2.Y=1828.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1821.82mil|Location2.Y=1828.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R3-1(93.701mm,47.015mm) on Top Layer And Text "R6" (93.04mm,46.354mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1873.867mil|Location2.Y=1880.116mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1873.867mil|Location2.Y=1880.116mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R3-2(95.801mm,47.015mm) on Top Layer And Text "R6" (93.04mm,46.354mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1979.801mil|Location2.Y=1986.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1979.801mil|Location2.Y=1986.05mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R4-1(95.801mm,49.508mm) on Top Layer And Text "R3" (93.04mm,48.843mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1919.82mil|Location2.Y=1926.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1919.82mil|Location2.Y=1926.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R4-2(93.701mm,49.508mm) on Top Layer And Text "R3" (93.04mm,48.843mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2325.927mil|Location2.X=2332.176mil|Location1.Y=2877.781mil|Location2.Y=2884.03mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2325.927mil|Location2.X=2332.176mil|Location1.Y=2877.781mil|Location2.Y=2884.03mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R501-1(59.575mm,72.5mm) on Bottom Layer And Text "R502" (63.221mm,72.109mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.875mil|Location2.X=2364.125mil|Location1.Y=2877.781mil|Location2.Y=2884.03mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.875mil|Location2.X=2364.125mil|Location1.Y=2877.781mil|Location2.Y=2884.03mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R501-1(59.575mm,72.5mm) on Bottom Layer And Text "U501" (59.969mm,72.668mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2425.895mil|Location2.X=2432.144mil|Location1.Y=2877.781mil|Location2.Y=2884.03mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2425.895mil|Location2.X=2432.144mil|Location1.Y=2877.781mil|Location2.Y=2884.03mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R501-2(61.425mm,72.5mm) on Bottom Layer And Text "R502" (63.221mm,72.109mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2247.86mil|Location2.X=2254.109mil|Location1.Y=2919.82mil|Location2.Y=2926.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2247.86mil|Location2.X=2254.109mil|Location1.Y=2919.82mil|Location2.Y=2926.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R504-1(56.5mm,74.425mm) on Bottom Layer And Text "R501" (62.027mm,74.243mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2237.914mil|Location2.X=2244.163mil|Location1.Y=2907.804mil|Location2.Y=2914.053mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2237.914mil|Location2.X=2244.163mil|Location1.Y=2907.804mil|Location2.Y=2914.053mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R504-1(56.5mm,74.425mm) on Bottom Layer And Text "U501" (59.969mm,72.668mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2197.927mil|Location2.X=2204.176mil|Location1.Y=2876.797mil|Location2.Y=2883.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2197.927mil|Location2.X=2204.176mil|Location1.Y=2876.797mil|Location2.Y=2883.046mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R504-2(56.5mm,72.575mm) on Bottom Layer And Text "U501" (59.969mm,72.668mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1625.82mil|Location2.Y=1632.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1625.82mil|Location2.Y=1632.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R5-1(93.701mm,42.029mm) on Top Layer And Text "R8" (93.04mm,41.375mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1685.801mil|Location2.Y=1692.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1685.801mil|Location2.Y=1692.05mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R5-2(95.801mm,42.029mm) on Top Layer And Text "R8" (93.04mm,41.375mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2369.875mil|Location2.X=2376.125mil|Location1.Y=2503.765mil|Location2.Y=2510.014mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2369.875mil|Location2.X=2376.125mil|Location1.Y=2503.765mil|Location2.Y=2510.014mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R602-1(60.925mm,63mm) on Top Layer And Text "R601" (60.274mm,62.535mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1990.875mil|Location2.X=1997.125mil|Location1.Y=2280.34mil|Location2.Y=2286.589mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1990.875mil|Location2.X=1997.125mil|Location1.Y=2280.34mil|Location2.Y=2286.589mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R604-2(51.25mm,59.5mm) on Top Layer And Text "R603" (50.648mm,57.861mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1783.801mil|Location2.Y=1790.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1783.801mil|Location2.Y=1790.05mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R6-1(95.801mm,44.522mm) on Top Layer And Text "R5" (93.04mm,43.864mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1723.82mil|Location2.Y=1730.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1723.82mil|Location2.Y=1730.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R6-2(93.701mm,44.522mm) on Top Layer And Text "R5" (93.04mm,43.864mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1838.942mil|Location2.X=1848.066mil|Location1.Y=1892.731mil|Location2.Y=1901.855mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1838.942mil|Location2.X=1848.066mil|Location1.Y=1892.731mil|Location2.Y=1901.855mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.117mm &lt; 0.2mm) Between Pad R704-1(46.15mm,48.825mm) on Bottom Layer And Text "R705" (46.863mm,46.482mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.117mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1841.875mil|Location2.X=1848.125mil|Location1.Y=1826.875mil|Location2.Y=1833.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1841.875mil|Location2.X=1848.125mil|Location1.Y=1826.875mil|Location2.Y=1833.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R704-2(46.15mm,46.975mm) on Bottom Layer And Text "R705" (46.863mm,46.482mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1831.914mil|Location2.X=1838.163mil|Location1.Y=1752.859mil|Location2.Y=1759.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1831.914mil|Location2.X=1838.163mil|Location1.Y=1752.859mil|Location2.Y=1759.108mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R705-1(46.15mm,44.875mm) on Bottom Layer And Text "C705" (49.657mm,43.332mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1791.927mil|Location2.X=1798.176mil|Location1.Y=1713.411mil|Location2.Y=1719.66mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1791.927mil|Location2.X=1798.176mil|Location1.Y=1713.411mil|Location2.Y=1719.66mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R705-2(46.15mm,43.025mm) on Bottom Layer And Text "C705" (49.657mm,43.332mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1798.888mil|Location2.X=1805.138mil|Location1.Y=1714.859mil|Location2.Y=1721.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1798.888mil|Location2.X=1805.138mil|Location1.Y=1714.859mil|Location2.Y=1721.108mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R705-2(46.15mm,43.025mm) on Bottom Layer And Text "C706" (46.787mm,42.367mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=875.875mil|Location2.X=882.125mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=875.875mil|Location2.X=882.125mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R709-2(23.14mm,32.87mm) on Top Layer And Text "R710" (22.327mm,32.258mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=941.032mil|Location2.X=947.282mil|Location1.Y=1173.191mil|Location2.Y=1179.44mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=941.032mil|Location2.X=947.282mil|Location1.Y=1173.191mil|Location2.Y=1179.44mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R710-1(23.14mm,30.57mm) on Top Layer And Text "R709" (27.128mm,31.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1104.36mil|Location2.X=1110.609mil|Location1.Y=1897.466mil|Location2.Y=1903.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1104.36mil|Location2.X=1110.609mil|Location1.Y=1897.466mil|Location2.Y=1903.715mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R712-1(27.45mm,47.5mm) on Top Layer And Text "R711" (26.607mm,48.726mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2073.914mil|Location2.X=2080.163mil|Location1.Y=1415.804mil|Location2.Y=1422.053mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2073.914mil|Location2.X=2080.163mil|Location1.Y=1415.804mil|Location2.Y=1422.053mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R802-1(52.5mm,36mm) on Bottom Layer And Text "Q801" (55.804mm,34.771mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2153.888mil|Location2.X=2160.137mil|Location1.Y=1387.623mil|Location2.Y=1393.873mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2153.888mil|Location2.X=2160.137mil|Location1.Y=1387.623mil|Location2.Y=1393.873mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R802-2(54.35mm,36mm) on Bottom Layer And Text "Q801" (55.804mm,34.771mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2484.914mil|Location2.X=2491.163mil|Location1.Y=1261.804mil|Location2.Y=1268.053mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2484.914mil|Location2.X=2491.163mil|Location1.Y=1261.804mil|Location2.Y=1268.053mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R803-2(62mm,32mm) on Bottom Layer And Text "R804" (66.243mm,30.86mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1565.801mil|Location2.Y=1572.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3743.974mil|Location2.X=3750.224mil|Location1.Y=1565.801mil|Location2.Y=1572.05mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R8-1(95.801mm,39.536mm) on Top Layer And Text "R7" (93.04mm,38.327mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1522.899mil|Location2.Y=1529.148mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=1522.899mil|Location2.Y=1529.148mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R8-2(93.701mm,39.536mm) on Top Layer And Text "R7" (93.04mm,38.327mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=659.793mil|Location2.X=666.043mil|Location1.Y=1366.954mil|Location2.Y=1373.203mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=659.793mil|Location2.X=666.043mil|Location1.Y=1366.954mil|Location2.Y=1373.203mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R902-1(17mm,34.1mm) on Bottom Layer And Text "Z901" (16.866mm,34.519mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=626.344mil|Location2.X=635.468mil|Location1.Y=1420.027mil|Location2.Y=1429.151mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=626.344mil|Location2.X=635.468mil|Location1.Y=1420.027mil|Location2.Y=1429.151mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.031mm &lt; 0.2mm) Between Pad R902-2(17mm,36.9mm) on Bottom Layer And Text "Z901" (16.866mm,34.519mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.031mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=625.947mil|Location2.X=632.196mil|Location1.Y=1513.875mil|Location2.Y=1520.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=625.947mil|Location2.X=632.196mil|Location1.Y=1513.875mil|Location2.Y=1520.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R903-1(16.4mm,39.5mm) on Bottom Layer And Text "R902" (21.565mm,38.532mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1067.485mil|Location2.X=1076.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1067.485mil|Location2.X=1076.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R907-1(28.93mm,25.64mm) on Bottom Layer And Track (27.23mm,27.497mm)(27.23mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.343mil|Location2.X=1210.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.343mil|Location2.X=1210.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R907-1(28.93mm,25.64mm) on Bottom Layer And Track (30.63mm,27.497mm)(30.63mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1067.485mil|Location2.X=1076.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1067.485mil|Location2.X=1076.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R907-2(28.93mm,31.64mm) on Bottom Layer And Track (27.23mm,27.497mm)(27.23mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.343mil|Location2.X=1210.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.343mil|Location2.X=1210.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R907-2(28.93mm,31.64mm) on Bottom Layer And Track (30.63mm,27.497mm)(30.63mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=917.485mil|Location2.X=926.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=917.485mil|Location2.X=926.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R908-1(25.12mm,25.64mm) on Bottom Layer And Track (23.42mm,27.497mm)(23.42mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1051.343mil|Location2.X=1060.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1051.343mil|Location2.X=1060.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R908-1(25.12mm,25.64mm) on Bottom Layer And Track (26.82mm,27.497mm)(26.82mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=917.485mil|Location2.X=926.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=917.485mil|Location2.X=926.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R908-2(25.12mm,31.64mm) on Bottom Layer And Track (23.42mm,27.497mm)(23.42mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1051.343mil|Location2.X=1060.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1051.343mil|Location2.X=1060.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R908-2(25.12mm,31.64mm) on Bottom Layer And Track (26.82mm,27.497mm)(26.82mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1217.485mil|Location2.X=1226.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1217.485mil|Location2.X=1226.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R909-1(32.74mm,25.64mm) on Bottom Layer And Track (31.04mm,27.497mm)(31.04mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1351.343mil|Location2.X=1360.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1351.343mil|Location2.X=1360.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R909-1(32.74mm,25.64mm) on Bottom Layer And Track (34.44mm,27.497mm)(34.44mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1217.485mil|Location2.X=1226.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1217.485mil|Location2.X=1226.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R909-2(32.74mm,31.64mm) on Bottom Layer And Track (31.04mm,27.497mm)(31.04mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1351.343mil|Location2.X=1360.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1351.343mil|Location2.X=1360.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R909-2(32.74mm,31.64mm) on Bottom Layer And Track (34.44mm,27.497mm)(34.44mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=2017.82mil|Location2.Y=2024.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.875mil|Location2.X=3666.125mil|Location1.Y=2017.82mil|Location2.Y=2024.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-1(93.701mm,52mm) on Top Layer And Text "R4" (93.04mm,51.332mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=767.485mil|Location2.X=776.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=767.485mil|Location2.X=776.609mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R910-1(21.31mm,25.64mm) on Bottom Layer And Track (19.61mm,27.497mm)(19.61mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=901.343mil|Location2.X=910.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=901.343mil|Location2.X=910.467mil|Location1.Y=1071.422mil|Location2.Y=1080.546mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R910-1(21.31mm,25.64mm) on Bottom Layer And Track (23.01mm,27.497mm)(23.01mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=767.485mil|Location2.X=776.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=767.485mil|Location2.X=776.609mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R910-2(21.31mm,31.64mm) on Bottom Layer And Track (19.61mm,27.497mm)(19.61mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=901.343mil|Location2.X=910.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=901.343mil|Location2.X=910.467mil|Location1.Y=1174.572mil|Location2.Y=1183.696mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.2mm) Between Pad R910-2(21.31mm,31.64mm) on Bottom Layer And Track (23.01mm,27.497mm)(23.01mm,29.783mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3749.846mil|Location2.X=3756.095mil|Location1.Y=2017.82mil|Location2.Y=2024.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3749.846mil|Location2.X=3756.095mil|Location1.Y=2017.82mil|Location2.Y=2024.07mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-2(95.801mm,52mm) on Top Layer And Text "R4" (93.04mm,51.332mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2801.005mil|Location2.X=2807.254mil|Location1.Y=2196.875mil|Location2.Y=2203.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2801.005mil|Location2.X=2807.254mil|Location1.Y=2196.875mil|Location2.Y=2203.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U202-3(71.95mm,56mm) on Top Layer And Text "C201" (70.485mm,55.88mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2811.863mil|Location2.X=2818.112mil|Location1.Y=2246.859mil|Location2.Y=2253.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2811.863mil|Location2.X=2818.112mil|Location1.Y=2246.859mil|Location2.Y=2253.108mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U202-4(71.95mm,57.27mm) on Top Layer And Text "C201" (70.485mm,55.88mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2810.412mil|Location2.X=2816.661mil|Location1.Y=2363.415mil|Location2.Y=2369.664mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2810.412mil|Location2.X=2816.661mil|Location1.Y=2363.415mil|Location2.Y=2369.664mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U202-6(71.95mm,59.81mm) on Top Layer And Text "R201" (70.637mm,59.538mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2801.005mil|Location2.X=2807.254mil|Location1.Y=2400.856mil|Location2.Y=2407.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2801.005mil|Location2.X=2807.254mil|Location1.Y=2400.856mil|Location2.Y=2407.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U202-7(71.95mm,61.08mm) on Top Layer And Text "R201" (70.637mm,59.538mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3558.875mil|Location2.X=3565.125mil|Location1.Y=2512.226mil|Location2.Y=2518.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3558.875mil|Location2.X=3565.125mil|Location1.Y=2512.226mil|Location2.Y=2518.475mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U401-7(89.725mm,64.19mm) on Bottom Layer And Text "U302" (90.475mm,62.66mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3338.947mil|Location2.X=3345.196mil|Location1.Y=2512.226mil|Location2.Y=2518.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3338.947mil|Location2.X=3345.196mil|Location1.Y=2512.226mil|Location2.Y=2518.475mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U401-8(84.275mm,64.19mm) on Bottom Layer And Text "U302" (90.475mm,62.66mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2324.934mil|Location2.X=2331.183mil|Location1.Y=2522.855mil|Location2.Y=2529.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2324.934mil|Location2.X=2331.183mil|Location1.Y=2522.855mil|Location2.Y=2529.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U501-6(59.225mm,64.46mm) on Bottom Layer And Text "U101" (63.703mm,62.66mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2354.924mil|Location2.X=2361.173mil|Location1.Y=2473.817mil|Location2.Y=2480.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2354.924mil|Location2.X=2361.173mil|Location1.Y=2473.817mil|Location2.Y=2480.066mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U501-7(59.225mm,63.19mm) on Bottom Layer And Text "U101" (63.703mm,62.66mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1739.664mil|Location2.X=1745.913mil|Location1.Y=2240.856mil|Location2.Y=2247.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1739.664mil|Location2.X=1745.913mil|Location1.Y=2240.856mil|Location2.Y=2247.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U701-1(44.715mm,57.725mm) on Multi-Layer And Text "R702" (41.783mm,55.474mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.875mil|Location2.X=1648.125mil|Location1.Y=2240.856mil|Location2.Y=2247.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.875mil|Location2.X=1648.125mil|Location1.Y=2240.856mil|Location2.Y=2247.105mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U701-2(42.175mm,57.725mm) on Multi-Layer And Text "R702" (41.783mm,55.474mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=651.734mil|Location2.X=660.858mil|Location1.Y=2115.755mil|Location2.Y=2124.879mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=651.734mil|Location2.X=660.858mil|Location1.Y=2115.755mil|Location2.Y=2124.879mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.112mm &lt; 0.2mm) Between Pad U702-4(17.225mm,53.5mm) on Top Layer And Text "R706" (15.146mm,54.039mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.112mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=660.138mil|Location2.X=666.388mil|Location1.Y=2141.359mil|Location2.Y=2147.608mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=660.138mil|Location2.X=666.388mil|Location1.Y=2141.359mil|Location2.Y=2147.608mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U702-5(17.225mm,54.77mm) on Top Layer And Text "R706" (15.146mm,54.039mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=651.734mil|Location2.X=660.858mil|Location1.Y=2188.93mil|Location2.Y=2198.054mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=651.734mil|Location2.X=660.858mil|Location1.Y=2188.93mil|Location2.Y=2198.054mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.05mm &lt; 0.2mm) Between Pad U702-6(17.225mm,56.04mm) on Top Layer And Text "R706" (15.146mm,54.039mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1845.497mil|Location2.Y=1851.747mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1845.497mil|Location2.Y=1851.747mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-1(54.65mm,47.105mm) on Bottom Layer And Track (53.925mm,42.45mm)(53.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1795.497mil|Location2.Y=1801.747mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1795.497mil|Location2.Y=1801.747mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-2(54.65mm,45.835mm) on Bottom Layer And Track (53.925mm,42.45mm)(53.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1745.497mil|Location2.Y=1751.747mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1745.497mil|Location2.Y=1751.747mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-3(54.65mm,44.565mm) on Bottom Layer And Track (53.925mm,42.45mm)(53.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.895mil|Location2.X=2181.144mil|Location1.Y=1701.859mil|Location2.Y=1708.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.895mil|Location2.X=2181.144mil|Location1.Y=1701.859mil|Location2.Y=1708.108mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-4(54.65mm,43.295mm) on Bottom Layer And Text "R801" (56.845mm,42.037mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1695.497mil|Location2.Y=1701.747mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.907mil|Location2.X=2126.156mil|Location1.Y=1695.497mil|Location2.Y=1701.747mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-4(54.65mm,43.295mm) on Bottom Layer And Track (53.925mm,42.45mm)(53.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1951.875mil|Location2.X=1958.125mil|Location1.Y=1713.219mil|Location2.Y=1719.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1951.875mil|Location2.X=1958.125mil|Location1.Y=1713.219mil|Location2.Y=1719.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-5(49.2mm,43.295mm) on Bottom Layer And Text "C705" (49.657mm,43.332mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1712.769mil|Location2.Y=1719.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1712.769mil|Location2.Y=1719.018mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-5(49.2mm,43.295mm) on Bottom Layer And Track (49.925mm,42.45mm)(49.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1911.888mil|Location2.X=1918.138mil|Location1.Y=1752.859mil|Location2.Y=1759.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1911.888mil|Location2.X=1918.138mil|Location1.Y=1752.859mil|Location2.Y=1759.108mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-6(49.2mm,44.565mm) on Bottom Layer And Text "C705" (49.657mm,43.332mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1762.769mil|Location2.Y=1769.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1762.769mil|Location2.Y=1769.018mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-6(49.2mm,44.565mm) on Bottom Layer And Track (49.925mm,42.45mm)(49.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1812.769mil|Location2.Y=1819.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1812.769mil|Location2.Y=1819.018mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-7(49.2mm,45.835mm) on Bottom Layer And Track (49.925mm,42.45mm)(49.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1862.769mil|Location2.Y=1869.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1962.427mil|Location2.X=1968.676mil|Location1.Y=1862.769mil|Location2.Y=1869.018mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U703-8(49.2mm,47.105mm) on Bottom Layer And Track (49.925mm,42.45mm)(49.925mm,47.95mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDD11GQWURUM5WOXPWS43VF4K3AIETLCASAVBVYXLUTBT4Z03PHLEF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1630.358mil|Location2.X=1707.342mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1630.358mil|Location2.X=1707.342mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True">Net Antennae: Via (42.25mm,25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1630.358mil|Location2.X=1707.342mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1630.358mil|Location2.X=1707.342mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True">Net Antennae: Via (42.25mm,71mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=842.957mil|Location2.Y=966.852mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=842.957mil|Location2.Y=966.852mil|Absolute=True">Net Antennae: Via (45mm,22.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=1059.492mil|Location2.Y=1183.388mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=1059.492mil|Location2.Y=1183.388mil|Absolute=True">Net Antennae: Via (45mm,27.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=2653.98mil|Location2.Y=2777.876mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=2653.98mil|Location2.Y=2777.876mil|Absolute=True">Net Antennae: Via (45mm,68.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=2870.516mil|Location2.Y=2994.411mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1738.626mil|Location2.X=1815.61mil|Location1.Y=2870.516mil|Location2.Y=2994.411mil|Absolute=True">Net Antennae: Via (45mm,73.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1846.894mil|Location2.X=1923.877mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1846.894mil|Location2.X=1923.877mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True">Net Antennae: Via (47.75mm,25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1846.894mil|Location2.X=1923.877mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1846.894mil|Location2.X=1923.877mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True">Net Antennae: Via (47.75mm,71mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3598.862mil|Location2.X=3675.846mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3598.862mil|Location2.X=3675.846mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True">Net Antennae: Via (92.25mm,25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3598.862mil|Location2.X=3675.846mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3598.862mil|Location2.X=3675.846mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True">Net Antennae: Via (92.25mm,71mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=842.957mil|Location2.Y=966.852mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=842.957mil|Location2.Y=966.852mil|Absolute=True">Net Antennae: Via (95mm,22.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=1059.492mil|Location2.Y=1183.388mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=1059.492mil|Location2.Y=1183.388mil|Absolute=True">Net Antennae: Via (95mm,27.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=2653.98mil|Location2.Y=2777.876mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=2653.98mil|Location2.Y=2777.876mil|Absolute=True">Net Antennae: Via (95mm,68.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=2870.516mil|Location2.Y=2994.411mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707.13mil|Location2.X=3784.114mil|Location1.Y=2870.516mil|Location2.Y=2994.411mil|Absolute=True">Net Antennae: Via (95mm,73.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.398mil|Location2.X=3892.381mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.398mil|Location2.X=3892.381mil|Location1.Y=951.225mil|Location2.Y=1075.12mil|Absolute=True">Net Antennae: Via (97.75mm,25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.398mil|Location2.X=3892.381mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.398mil|Location2.X=3892.381mil|Location1.Y=2762.248mil|Location2.Y=2886.144mil|Absolute=True">Net Antennae: Via (97.75mm,71mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
