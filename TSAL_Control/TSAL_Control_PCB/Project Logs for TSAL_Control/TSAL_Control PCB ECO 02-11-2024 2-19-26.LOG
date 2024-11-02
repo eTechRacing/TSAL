@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=No_Voltage_Relays_Closed Pin=U201-2
+Removed Pin From Net: NetName=Relays_Implausibility Pin=U201-3
+Added Pin To Net: NetName=Relays_Implausibility Pin=U201-2
+Added Pin To Net: NetName=No_Voltage_Relays_Closed Pin=U201-3

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=HV_Accu_SCS Pin=U502-2
+Removed Pin From Net: NetName=AIR+_SCS Pin=U502-3
+Removed Pin From Net: NetName=AIR-_SCS Pin=U502-4
+Removed Pin From Net: NetName=Precharge_SCS Pin=U502-5
+Added Pin To Net: NetName=AIR-_SCS Pin=U502-2
+Added Pin To Net: NetName=Precharge_SCS Pin=U502-3
+Added Pin To Net: NetName=HV_Accu_SCS Pin=U502-4
+Added Pin To Net: NetName=AIR+_SCS Pin=U502-5
