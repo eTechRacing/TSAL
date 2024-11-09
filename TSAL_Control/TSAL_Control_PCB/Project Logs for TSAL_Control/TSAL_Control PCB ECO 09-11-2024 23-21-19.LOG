@@ -1,0 +1,33 @@
+Change Component DesignItemId : Designator=U703 Old DesignItemId=CMP-00181-2 New DesignItemId=CMP-00181-3
+Change Component Footprint: Designator=U703 Old Footprint=Timer_SA555 New Footprint=Timer_SA555
+Change Component Designator: OldDesignator=AIR+_COIL NewDesignator=TP106
+Change Component Designator: OldDesignator=AIR+_IMPL NewDesignator=TP301
+Change Component Designator: OldDesignator=AIR+_SCS NewDesignator=TP503
+Change Component Designator: OldDesignator=AIR+_STATE NewDesignator=TP102
+Change Component Designator: OldDesignator=AIR-_COIL NewDesignator=TP108
+Change Component Designator: OldDesignator=AIR-_IMPL NewDesignator=TP302
+Change Component Designator: OldDesignator=AIR-_SCS NewDesignator=TP504
+Change Component Designator: OldDesignator=AIR-_STATE NewDesignator=TP104
+Change Component Designator: OldDesignator=HV_ACCU NewDesignator=TP105
+Change Component Designator: OldDesignator=HV_ACCU_SCS NewDesignator=TP502
+Change Component Designator: OldDesignator=HV_DCT_TRIG NewDesignator=TP704
+Change Component Designator: OldDesignator=IMPLAUS. NewDesignator=TP202
+Change Component Designator: OldDesignator=IMPLAUS. UNDLY NewDesignator=TP201
+Change Component Designator: OldDesignator=LATCH_RST NewDesignator=TP203
+Change Component Designator: OldDesignator=NO_HV_REL_CLS NewDesignator=TP402
+Change Component Designator: OldDesignator=NOT_INTENT_REL_STATE NewDesignator=TP401
+Change Component Designator: OldDesignator=PRE_COIL NewDesignator=TP107
+Change Component Designator: OldDesignator=PRE_IMPL NewDesignator=TP303
+Change Component Designator: OldDesignator=PRE_SCS NewDesignator=TP505
+Change Component Designator: OldDesignator=PRE_STATE NewDesignator=TP103
+Change Component Designator: OldDesignator=REL_IMPLAUS NewDesignator=TP305
+Change Component Designator: OldDesignator=REL_STATE_DET NewDesignator=TP304
+Change Component Designator: OldDesignator=SAFE_STATE NewDesignator=TP204
+Change Component Designator: OldDesignator=SC_END NewDesignator=TP109
+Change Component Designator: OldDesignator=SCS_ERROR NewDesignator=TP506
+Change Component Designator: OldDesignator=TS_OFF NewDesignator=TP101
+Change Component Designator: OldDesignator=TS_ON NewDesignator=TP701
+Change Component Designator: OldDesignator=TSAL_GREEN NewDesignator=TP601
+Change Component Designator: OldDesignator=TSAL_RED NewDesignator=TP801
+Change Component Designator: OldDesignator=V_REF NewDesignator=TP501
+Change Managed Component Library Link : Designator=U703 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=29446891-1EF7-400B-A7A6-D25D5995FB0E New ItemGUID=29446891-1EF7-400B-A7A6-D25D5995FB0E Old RevisionGUID=a0999934-20e0-4024-bc50-023cd2c937d3 New RevisionGUID=3f90e73a-560d-4389-a4e4-28360abdfdc6
