@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_Control.PcbDoc
-Date     : 09/11/2024
-Time     : 23:30:16
+Date     : 11/11/2024
+Time     : 17:16:45
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -64,4 +64,4 @@ Rule Violations :0
 
 Violations Detected : 16
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
