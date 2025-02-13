@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=TP* NewDesignator=GREEN(GND)
+Change Component Designator: OldDesignator=TP* NewDesignator=VCC(12V)
+Change Component Designator: OldDesignator=TP NewDesignator=RED(GND)
+Added Member To Class: ClassName=TSAL 2024-2025 Member=Component VCC(12V) Vcc 12V
+Added Rule: Name=Schematic Supply Nets
