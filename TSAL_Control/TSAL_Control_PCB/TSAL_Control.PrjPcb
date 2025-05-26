@@ -135,9 +135,9 @@ DocumentUniqueId=XYFXSLLF
 
 [Document6]
 DocumentPath=[7] TSAL_Red.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=701
-AnnotationIndexControlEnabled=1
+AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=5
@@ -186,7 +186,7 @@ DocumentUniqueId=OQJDTHJH
 
 [Document9]
 DocumentPath=[5] SCS.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=501
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
@@ -415,24 +415,32 @@ Name=Company
 Value=e-Tech Racing
 
 [Parameter2]
+Name=Department
+Value=ECUs
+
+[Parameter3]
 Name=DesignedbyURL
 Value=e-techracing.es
 
-[Parameter3]
+[Parameter4]
 Name=DesignerMail
 Value=guillemroper@gmail.com
 
-[Parameter4]
+[Parameter5]
 Name=DesignerName
 Value=Guillem Ropero Serrano
 
-[Parameter5]
+[Parameter6]
 Name=Project
 Value=TSAL Control
 
-[Parameter6]
+[Parameter7]
 Name=ReviewerName
-Value=
+Value=---
+
+[Parameter8]
+Name=Version
+Value=2.0
 
 [Configuration1]
 Name=Sources
