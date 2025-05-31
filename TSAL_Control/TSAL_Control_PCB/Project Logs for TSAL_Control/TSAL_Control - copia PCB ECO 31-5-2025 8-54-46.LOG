@@ -1,0 +1,38 @@
+Change Component Footprint: Designator=X901 Old Footprint=HV-Relay-SPST-NC-24V New Footprint=HV-Relay-SPST-NC-24V
+Change Managed Component Library Link : Designator=X901 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=3ec7c55d-6183-40f7-8a3a-4eae7b499a61 New ItemGUID=3ec7c55d-6183-40f7-8a3a-4eae7b499a61 Old RevisionGUID=45e535ad-c75a-469b-be1f-99e140bbcaba New RevisionGUID=6979a77c-e097-4b29-99c0-4f26fd8df392
+Added Member To Class: ClassName=TSAL Red Member=Component R703 R100-0805FTK
+Added Member To Class: ClassName=TSAL Red Member=Component R705 R2M-2512FTK
+Added Member To Class: ClassName=TSAL Red Member=Component R706 R10k-0805FTK
+Added Member To Class: ClassName=TSAL Green Member=Component TP101 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP102 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP103 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP104 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP105 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP106 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP107 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP108 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP109 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP201 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP202 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP203 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP204 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP301 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP302 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP303 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP304 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP305 TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component TP401 TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component TP402 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP501 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP502 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP506 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP507 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP509 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP511 TestPoint
+Added Member To Class: ClassName=Green Driver Member=Component TP601 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP701 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP703 TestPoint
+Added Member To Class: ClassName=Red Driver Member=Component TP801 TestPoint
+Added Member To Class: ClassName=SCS Member=Component U501 CD4072BM
+Added Member To Class: ClassName=TSAL Red Member=Component U702 Timer_SA555
+Added Member To Class: ClassName=TSAL Red Member=Component U703 LM339D
