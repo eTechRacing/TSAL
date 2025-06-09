@@ -1,0 +1,143 @@
+Removed Pin From Net: NetName=TS_Off Pin=R509-1
+Removed Pin From Net: NetName=HV_Detection_Trigger Pin=R510-2
+Removed Pin From Net: NetName=HV_Accu_SCS Pin=TP502-1
+Removed Pin From Net: NetName=GateRED_SCS Pin=TP505-1
+Removed Pin From Net: NetName=AIR-_SCS Pin=TP507-1
+Removed Pin From Net: NetName=RedDRV_SCS Pin=TP508-1
+Removed Pin From Net: NetName=Precharge_SCS Pin=TP509-1
+Removed Pin From Net: NetName=GateGREEN_SCS Pin=TP510-1
+Removed Pin From Net: NetName=GreenDRV_SCS Pin=TP512-1
+Removed Pin From Net: NetName=SourceGREEN_SCS Pin=TP513-1
+Removed Pin From Net: NetName=Safe_State Pin=U101-4
+Removed Pin From Net: NetName=AIR+_SCS Pin=U401-11
+Removed Pin From Net: NetName=RedDRV_SCS Pin=U401-12
+Removed Pin From Net: NetName=GreenDRV_SCS Pin=U401-13
+Removed Pin From Net: NetName=HV_Accumulator Pin=U502-5
+Removed Pin From Net: NetName=Precharge_State Pin=U502-7
+Removed Pin From Net: NetName=AIR-_State Pin=U502-9
+Removed Pin From Net: NetName=TSAL_Green Pin=U503-7
+Removed Pin From Net: NetName=V_REF_Drivers Pin=U503-8
+Removed Pin From Net: NetName=TSAL_Red Pin=U503-9
+Removed Pin From Net: NetName=Discharge_Resistor Pin=X901-1
+Removed Pin From Net: NetName=TS+_DCBus1_Unfused Pin=X901-4
+Change Component Designator: OldDesignator=      NewDesignator=LtchRst
+Change Component Designator: OldDesignator=TP101 NewDesignator=TsOff
+Change Component Designator: OldDesignator=TP102 NewDesignator=A+Stat
+Change Component Designator: OldDesignator=TP103 NewDesignator=PreStat
+Change Component Designator: OldDesignator=TP104 NewDesignator=A-Stat
+Change Component Designator: OldDesignator=TP105 NewDesignator=HVAcc
+Change Component Designator: OldDesignator=TP106 NewDesignator=A-Coil
+Change Component Designator: OldDesignator=TP107 NewDesignator=PreCoil
+Change Component Designator: OldDesignator=TP108 NewDesignator=A+Coil
+Change Component Designator: OldDesignator=TP109 NewDesignator=SCEnd
+Change Component Designator: OldDesignator=TP201 NewDesignator=ImpUnd
+Change Component Designator: OldDesignator=TP202 NewDesignator=Imp
+Change Component Designator: OldDesignator=TP204 NewDesignator=SfStat
+Change Component Designator: OldDesignator=TP301 NewDesignator=A+Imp
+Change Component Designator: OldDesignator=TP302 NewDesignator=A-Imp
+Change Component Designator: OldDesignator=TP303 NewDesignator=PreImp
+Change Component Designator: OldDesignator=TP304 NewDesignator=RlyStat
+Change Component Designator: OldDesignator=TP401 NewDesignator=NIntRlyStat
+Change Component Designator: OldDesignator=TP402 NewDesignator=NVRC
+Change Component Designator: OldDesignator=TP501 NewDesignator=VRef
+Change Component Designator: OldDesignator=TP502 NewDesignator=HVAcc*
+Change Component Designator: OldDesignator=TP503 NewDesignator=SrcRed*
+Change Component Designator: OldDesignator=TP504 NewDesignator=VrefDrv
+Change Component Designator: OldDesignator=TP505 NewDesignator=GtRed*
+Change Component Designator: OldDesignator=TP506 NewDesignator=A+*
+Change Component Designator: OldDesignator=TP507 NewDesignator=A-*
+Change Component Designator: OldDesignator=TP508 NewDesignator=RedDrv*
+Change Component Designator: OldDesignator=TP509 NewDesignator=Pre*
+Change Component Designator: OldDesignator=TP510 NewDesignator=GtGrn*
+Change Component Designator: OldDesignator=TP511 NewDesignator=SCSErr
+Change Component Designator: OldDesignator=TP512 NewDesignator=GrnDrv*
+Change Component Designator: OldDesignator=TP513 NewDesignator=SrcGrn*
+Change Component Designator: OldDesignator=TP601 NewDesignator=TSALGrn
+Change Component Designator: OldDesignator=TP602 NewDesignator=GtGrnDrv
+Change Component Designator: OldDesignator=TP701 NewDesignator=TSOn
+Change Component Designator: OldDesignator=TP702 NewDesignator=HVout
+Change Component Designator: OldDesignator=TP703 NewDesignator=HVTrg
+Change Component Designator: OldDesignator=TP704 NewDesignator=VrefHV
+Change Component Designator: OldDesignator=TP705 NewDesignator=VDCBus
+Change Component Designator: OldDesignator=TP801 NewDesignator=TSALRed
+Change Component Designator: OldDesignator=TP802 NewDesignator=GtRedDrv
+Added Pin To Net: NetName=Precharge_SCS Pin=A-*-1
+Added Pin To Net: NetName=RedDRV_SCS Pin=GrnDrv*-1
+Added Pin To Net: NetName=GateRED_SCS Pin=GtGrn*-1
+Added Pin To Net: NetName=GateGREEN_SCS Pin=GtRed*-1
+Added Pin To Net: NetName=AIR-_SCS Pin=HVAcc*-1
+Added Pin To Net: NetName=HV_Accu_SCS Pin=Pre*-1
+Added Pin To Net: NetName=HV_Detection_Trigger Pin=R509-1
+Added Pin To Net: NetName=TS_Off Pin=R510-2
+Added Pin To Net: NetName=GreenDRV_SCS Pin=RedDrv*-1
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=SrcRed*-1
+Added Pin To Net: NetName=Safe_State Pin=U101-5
+Added Pin To Net: NetName=GreenDRV_SCS Pin=U401-11
+Added Pin To Net: NetName=AIR+_SCS Pin=U401-12
+Added Pin To Net: NetName=RedDRV_SCS Pin=U401-13
+Added Pin To Net: NetName=Precharge_State Pin=U502-5
+Added Pin To Net: NetName=AIR-_State Pin=U502-7
+Added Pin To Net: NetName=HV_Accumulator Pin=U502-9
+Added Pin To Net: NetName=TSAL_Red Pin=U503-7
+Added Pin To Net: NetName=V_REF_Drivers Pin=U503-10
+Added Pin To Net: NetName=TSAL_Green Pin=U503-11
+Added Pin To Net: NetName=TS+_DCBus1_Unfused Pin=X901-1
+Added Pin To Net: NetName=Discharge_Resistor Pin=X901-4
+Change Net Name : Old Net Name=AIR-_SCS New Net Name=HV_Accu_SCS
+Change Net Name : Old Net Name=GateGREEN_SCS New Net Name=GateRED_SCS
+Change Net Name : Old Net Name=GateRED_SCS New Net Name=GateGREEN_SCS
+Change Net Name : Old Net Name=GreenDRV_SCS New Net Name=RedDRV_SCS
+Change Net Name : Old Net Name=HV_Accu_SCS New Net Name=Precharge_SCS
+Change Net Name : Old Net Name=Precharge_SCS New Net Name=AIR-_SCS
+Change Net Name : Old Net Name=RedDRV_SCS New Net Name=GreenDRV_SCS
+Change Net Name : Old Net Name=SourceGREEN_SCS New Net Name=SourceRED_SCS
+Change Net Color : Old Net Color=RGB(145, 142, 146) New Net Color=RGB(17, 15, 10)
+Added Pin To Net: NetName=NetU101_4 Pin=U101-4
+Added Pin To Net: NetName=NetU101_4 Pin=U101-9
+Added Net: Name=NetU101_4
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=Q502-S
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=SrcGrn*-1
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=U503-13
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=Z502-A
+Added Net: Name=SourceGREEN_SCS
+Added Member To Class: ClassName=SCS Member=Component A+* TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component A+Coil TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component A+Imp TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component A+Stat TestPoint
+Added Member To Class: ClassName=SCS Member=Component A-* TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component A-Coil TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component A-Imp TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component A-Stat TestPoint
+Added Member To Class: ClassName=SCS Member=Component GrnDrv* TestPoint
+Added Member To Class: ClassName=SCS Member=Component GtGrn* TestPoint
+Added Member To Class: ClassName=Green Driver Member=Component GtGrnDrv TestPoint
+Added Member To Class: ClassName=SCS Member=Component GtRed* TestPoint
+Added Member To Class: ClassName=Red Driver Member=Component GtRedDrv TestPoint
+Added Member To Class: ClassName=SCS Member=Component HVAcc* TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component HVAcc TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component HVout TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component HVTrg TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component Imp TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component ImpUnd TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component LtchRst TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component NIntRlyStat TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component NVRC TestPoint
+Added Member To Class: ClassName=SCS Member=Component Pre* TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component PreCoil TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component PreImp TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component PreStat TestPoint
+Added Member To Class: ClassName=SCS Member=Component RedDrv* TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component RlyStat TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component SCEnd TestPoint
+Added Member To Class: ClassName=SCS Member=Component SCSErr TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component SfStat TestPoint
+Added Member To Class: ClassName=SCS Member=Component SrcGrn* TestPoint
+Added Member To Class: ClassName=SCS Member=Component SrcRed* TestPoint
+Added Member To Class: ClassName=Green Driver Member=Component TSALGrn TestPoint
+Added Member To Class: ClassName=Red Driver Member=Component TSALRed TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TsOff TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TSOn TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component VDCBus TestPoint
+Added Member To Class: ClassName=SCS Member=Component VrefDrv TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component VrefHV TestPoint
+Added Member To Class: ClassName=SCS Member=Component VRef TestPoint
