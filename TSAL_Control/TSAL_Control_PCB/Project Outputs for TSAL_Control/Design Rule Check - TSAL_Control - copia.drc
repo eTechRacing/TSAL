@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : E:\Documentos\GitHub\TSAL\TSAL_Control\TSAL_Control_PCB\TSAL_ControlV2.1.PcbDoc
+PCB File : C:\Users\Guillem Ropero\Desktop\TSAL_Control_PCB\TSAL_Control - copia.PcbDoc
 Date     : 09/06/2025
-Time     : 19:10:12
+Time     : 18:21:39
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
    Violation between Clearance Constraint: (0.19mm < 0.2mm) Between Pad J3-(103.66mm,71.75mm) on Multi-Layer And Track (102.32mm,70.5mm)(102.32mm,73mm) on Bottom Layer 

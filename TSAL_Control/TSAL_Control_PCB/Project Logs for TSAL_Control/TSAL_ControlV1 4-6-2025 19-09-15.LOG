@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=Discharge_Resistor Pin=X901-1
-Removed Pin From Net: NetName=TS+_DCBus1_Unfused Pin=X901-4
-Added Pin To Net: NetName=TS+_DCBus1_Unfused Pin=X901-1
-Added Pin To Net: NetName=Discharge_Resistor Pin=X901-4

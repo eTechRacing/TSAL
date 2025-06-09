@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=HV_Detection_Trigger Pin=R509-1
+Removed Pin From Net: NetName=TS_Off Pin=R510-2
+Removed Pin From Net: NetName=GateRED_SCS Pin=TP505-1
+Removed Pin From Net: NetName=RedDRV_SCS Pin=TP508-1
+Removed Pin From Net: NetName=GateGREEN_SCS Pin=TP510-1
+Removed Pin From Net: NetName=GreenDRV_SCS Pin=TP512-1
+Removed Pin From Net: NetName=SourceGREEN_SCS Pin=TP513-1
+Removed Pin From Net: NetName=RedDRV_SCS Pin=U202-5
+Removed Pin From Net: NetName=RedDRV_SCS Pin=U202-6
+Removed Pin From Net: NetName=GreenDRV_SCS Pin=U401-13
+Removed Pin From Net: NetName=V_REF_Drivers Pin=U503-6
+Removed Pin From Net: NetName=TSAL_Red Pin=U503-7
+Removed Pin From Net: NetName=TSAL_Green Pin=U503-11
+Added Pin To Net: NetName=TS_Off Pin=R509-1
+Added Pin To Net: NetName=HV_Detection_Trigger Pin=R510-2
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=TP503-1
+Added Pin To Net: NetName=GateGREEN_SCS Pin=TP505-1
+Added Pin To Net: NetName=GreenDRV_SCS Pin=TP508-1
+Added Pin To Net: NetName=GateRED_SCS Pin=TP510-1
+Added Pin To Net: NetName=RedDRV_SCS Pin=TP512-1
+Added Pin To Net: NetName=GreenDRV_SCS Pin=U202-5
+Added Pin To Net: NetName=GreenDRV_SCS Pin=U202-6
+Added Pin To Net: NetName=RedDRV_SCS Pin=U401-13
+Added Pin To Net: NetName=V_REF_Drivers Pin=U503-8
+Added Pin To Net: NetName=TSAL_Green Pin=U503-9
+Added Pin To Net: NetName=TSAL_Red Pin=U503-11
+Change Net Name : Old Net Name=GateGREEN_SCS New Net Name=GateRED_SCS
+Change Net Name : Old Net Name=GateRED_SCS New Net Name=GateGREEN_SCS
+Change Net Name : Old Net Name=GreenDRV_SCS New Net Name=RedDRV_SCS
+Change Net Name : Old Net Name=RedDRV_SCS New Net Name=GreenDRV_SCS
+Change Net Name : Old Net Name=SourceGREEN_SCS New Net Name=SourceRED_SCS
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=Q501-S
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=TP513-1
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=U503-14
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=Z501-A
+Added Net: Name=SourceGREEN_SCS

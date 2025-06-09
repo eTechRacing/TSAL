@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=TSAL_Green Pin=U503-9
+Removed Pin From Net: NetName=V_REF_Drivers Pin=U503-10
+Removed Pin From Net: NetName=TSAL_Red Pin=U503-11
+Removed Pin From Net: NetName=SourceRED_SCS Pin=U503-13
+Removed Pin From Net: NetName=SourceGREEN_SCS Pin=U503-14
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=U503-1
+Added Pin To Net: NetName=V_REF_Drivers Pin=U503-6
+Added Pin To Net: NetName=TSAL_Green Pin=U503-7
+Added Pin To Net: NetName=TSAL_Red Pin=U503-9
+Added Pin To Net: NetName=SourceRED_SCS Pin=U503-14

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Safe_State Pin=U101-5
+Added Pin To Net: NetName=Safe_State Pin=U101-4
+Added Pin To Net: NetName=NetU101_5 Pin=U101-5
+Added Pin To Net: NetName=NetU101_5 Pin=U101-9
+Added Net: Name=NetU101_5
