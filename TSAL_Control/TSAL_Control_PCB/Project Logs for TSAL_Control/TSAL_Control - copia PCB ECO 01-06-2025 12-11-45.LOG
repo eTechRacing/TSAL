@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=SCS_Signals2 Pin=U202-5
+Added Pin To Net: NetName=RedDRV_SCS Pin=U202-5

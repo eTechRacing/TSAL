@@ -1,0 +1,10 @@
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [TSAL_Dummy.PcbDoc]
+   Generated File[TSAL_Dummy.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 0:20:30 On 28/11/2023

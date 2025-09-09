@@ -1,0 +1,33 @@
+Change Component Designator: OldDesignator=D101 NewDesignator=D501
+Change Component Designator: OldDesignator=R101 NewDesignator=R505
+Add Component: Footprint Not Found Fuse_485001
+Add Component: Footprint Not Found Fuse_485001
+Add Component: Footprint Not Found Fuse_485001
+Add Component: Footprint Not Found J_MicroFit_2x1
+Add Component: Footprint Not Found J_MicroFit_2x1
+Add Component: Footprint Not Found J_MicroFit_2x1
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS1-1
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS1-2
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS?-1
+Add Pin To Net: Unknown Pin: Pin F_DC_BUS?-2
+Add Pin To Net: Unknown Pin: Pin F_TS-?-1
+Add Pin To Net: Unknown Pin: Pin F_TS-?-2
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS1-1
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS1-2
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS?-1
+Add Pin To Net: Unknown Pin: Pin J_TS+_DC_BUS?-2
+Add Pin To Net: Unknown Pin: Pin J_TS--1
+Add Pin To Net: Unknown Pin: Pin J_TS--2
+Change Net Name : Old Net Name=NetD101_A New Net Name=NetD501_A
+Add Net: Net with name "AIR-_State" already exists
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class: Class already exists: Designator
+Add Class Member: Failed to add class member : Component F_DC_BUS1 485001
+Add Class Member: Failed to add class member : Component F_DC_BUS? 485001
+Add Class Member: Failed to add class member : Component F_TS-? 485001
+Add Class Member: Failed to add class member : Component J_TS+_DC_BUS1 436500215
+Add Class Member: Failed to add class member : Component J_TS+_DC_BUS? 436500215
+Add Class Member: Failed to add class member : Component J_TS- 436500215

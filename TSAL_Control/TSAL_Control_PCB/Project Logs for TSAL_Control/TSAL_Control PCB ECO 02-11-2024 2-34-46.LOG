@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=AIR-_SCS Pin=U502-2
+Removed Pin From Net: NetName=Precharge_SCS Pin=U502-3
+Added Pin To Net: NetName=Precharge_SCS Pin=U502-2
+Added Pin To Net: NetName=AIR-_SCS Pin=U502-3

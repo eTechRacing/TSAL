@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=TS- Pin=Q901-3
+Removed Pin From Net: NetName=TS- Pin=Q902-S
+Removed Pin From Net: NetName=TS- Pin=R903-2
+Removed Pin From Net: NetName=TS- Pin=Z901-A
+Add Net: Net with name "TS-" already exists

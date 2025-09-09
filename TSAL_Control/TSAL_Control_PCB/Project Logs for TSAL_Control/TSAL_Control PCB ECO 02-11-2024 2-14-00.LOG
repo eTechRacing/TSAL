@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=AIR-_State Pin=U301-5
+Removed Pin From Net: NetName=AIR-_Coil Pin=U301-6
+Added Pin To Net: NetName=AIR-_Coil Pin=U301-5
+Added Pin To Net: NetName=AIR-_State Pin=U301-6

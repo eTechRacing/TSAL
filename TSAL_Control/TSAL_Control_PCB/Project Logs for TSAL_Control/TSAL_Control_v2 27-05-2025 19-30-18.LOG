@@ -1,0 +1,29 @@
+Added Component: Designator=U503(D0014A_N)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Channels"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "70°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "0°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Supply Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nominal Dual Supply"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nominal Gain Bandwidth Product"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nominal Supply Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "OPEN-COLLECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SourceRED_SCS Pin=U503-1
+Added Pin To Net: NetName=+12 Pin=U503-3
+Added Pin To Net: NetName=TSAL_Red Pin=U503-6
+Added Pin To Net: NetName=V_REF_Drivers Pin=U503-7
+Added Pin To Net: NetName=TSAL_Green Pin=U503-10
+Added Pin To Net: NetName=V_REF_Drivers Pin=U503-11
+Added Pin To Net: NetName=GND Pin=U503-12
+Added Pin To Net: NetName=SourceGREEN_SCS Pin=U503-13
+Added Member To Class: ClassName=SCS Member=Component U503 LM339D

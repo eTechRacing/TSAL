@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [TSAL 2024-25.PcbDoc]
+   Generated File[TSAL 2024-25.TXT]
+   Generated File[TSAL 2024-25.LDP]
+   Generated File[TSAL 2024-25.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 20:15:36 On 06/01/2025

@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=SC_End Pin=R901-1
+Added Pin To Net: NetName=SC_End_30V Pin=R901-1

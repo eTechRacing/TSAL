@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=SCS_Signals3 Pin=C555-1
+Added Pin To Net: NetName=SCS_Error Pin=C555-1
+Added Member To Class: ClassName=TSAL_Control Member=Component J1 J_NanoFit_2x8_V

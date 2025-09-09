@@ -1,10 +1,12 @@
-Output: Export STEP
-Type  : ExportSTEP
-From  : Variant [[No Variations]] of PCB Document [TSAL_Control.PcbDoc]
-   Generated File[TSAL_Control.step]
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [TSAL_Control.PcbDoc]
+   Generated File[TSAL_Control.TXT]
+   Generated File[TSAL_Control.LDP]
+   Generated File[TSAL_Control.DRR]
 
 
-Files Generated   : 1
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 14:33:11 On 13/01/2023
+Finished Output Generation At 17:16:16 On 11/11/2024

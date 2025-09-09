@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=RedDRV_SCS Pin=U401-11
+Removed Pin From Net: NetName=AIR+_SCS Pin=U401-12
+Added Pin To Net: NetName=AIR+_SCS Pin=U401-11
+Added Pin To Net: NetName=RedDRV_SCS Pin=U401-12

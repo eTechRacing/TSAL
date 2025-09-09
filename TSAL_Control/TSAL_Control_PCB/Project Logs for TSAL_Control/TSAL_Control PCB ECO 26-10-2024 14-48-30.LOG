@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=TS- Pin=Q701-S
+Removed Pin From Net: NetName=TS- Pin=Q702-S
+Removed Pin From Net: NetName=+5TS Pin=R701-1
+Removed Member From Class: ClassName=TSAL Red Member=Q701
+Removed Member From Class: ClassName=TSAL Red Member=Q702
+Removed Member From Class: ClassName=TSAL Red Member=R701
+Added Pin To Net: NetName=TS- Pin=Q703-2
+Added Pin To Net: NetName=Out_HV_Comparator Pin=Q703-1
+Added Pin To Net: NetName=Out_HV_Comparator Pin=R706-2
+Added Pin To Net: NetName=Out_HV_Comparator Pin=R707-2
+Added Pin To Net: NetName=Out_HV_Comparator Pin=U702-1
+Added Pin To Net: NetName=Out_HV_Comparator Pin=U702-2
+Added Net: Name=Out_HV_Comparator

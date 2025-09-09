@@ -1,0 +1,485 @@
+Change Component DesignItemId : Designator=C702 Old DesignItemId=CMP-001-00008-3 New DesignItemId=CMP-001-00008-6
+Change Component DesignItemId : Designator=C704 Old DesignItemId=CMP-001-00008-3 New DesignItemId=CMP-001-00008-6
+Change Component DesignItemId : Designator=C705 Old DesignItemId=CMP-001-00008-3 New DesignItemId=CMP-001-00008-6
+Change Component DesignItemId : Designator=C706 Old DesignItemId=CMP-001-00017-1 New DesignItemId=CMP-001-00017-4
+Change Component DesignItemId : Designator=R710 Old DesignItemId=CMP-009-00018-3 New DesignItemId=CMP-009-00018-4
+Change Component DesignItemId : Designator=R4 Old DesignItemId=CMP-009-00044-1 New DesignItemId=CMP-009-00044-2
+Change Component DesignItemId : Designator=R6 Old DesignItemId=CMP-009-00044-1 New DesignItemId=CMP-009-00044-2
+Change Component DesignItemId : Designator=R8 Old DesignItemId=CMP-009-00044-1 New DesignItemId=CMP-009-00044-2
+Change Component DesignItemId : Designator=R10 Old DesignItemId=CMP-009-00044-1 New DesignItemId=CMP-009-00044-2
+Change Component DesignItemId : Designator=MH1 Old DesignItemId=CMP-00040-1 New DesignItemId=CMP-00040-2
+Change Component DesignItemId : Designator=MH2 Old DesignItemId=CMP-00040-1 New DesignItemId=CMP-00040-2
+Change Component DesignItemId : Designator=MH3 Old DesignItemId=CMP-00040-1 New DesignItemId=CMP-00040-2
+Change Component DesignItemId : Designator=MH4 Old DesignItemId=CMP-00040-1 New DesignItemId=CMP-00040-2
+Change Component DesignItemId : Designator=C201 Old DesignItemId=CMP-00055-6 New DesignItemId=CMP-00055-8
+Change Component DesignItemId : Designator=C202 Old DesignItemId=CMP-00055-6 New DesignItemId=CMP-00055-8
+Change Component DesignItemId : Designator=R603 Old DesignItemId=CMP-00075-5 New DesignItemId=CMP-00075-6
+Change Component DesignItemId : Designator=R604 Old DesignItemId=CMP-00075-5 New DesignItemId=CMP-00075-6
+Change Component DesignItemId : Designator=R803 Old DesignItemId=CMP-00075-5 New DesignItemId=CMP-00075-6
+Change Component DesignItemId : Designator=R804 Old DesignItemId=CMP-00075-5 New DesignItemId=CMP-00075-6
+Change Component DesignItemId : Designator=R501 Old DesignItemId=CMP-00076-1 New DesignItemId=CMP-00076-2
+Change Component DesignItemId : Designator=R502 Old DesignItemId=CMP-00076-1 New DesignItemId=CMP-00076-2
+Change Component DesignItemId : Designator=R503 Old DesignItemId=CMP-00076-1 New DesignItemId=CMP-00076-2
+Change Component DesignItemId : Designator=R504 Old DesignItemId=CMP-00076-1 New DesignItemId=CMP-00076-2
+Change Component DesignItemId : Designator=R602 Old DesignItemId=CMP-00076-1 New DesignItemId=CMP-00076-2
+Change Component DesignItemId : Designator=R802 Old DesignItemId=CMP-00076-1 New DesignItemId=CMP-00076-2
+Change Component DesignItemId : Designator=R601 Old DesignItemId=CMP-00083-1 New DesignItemId=CMP-00083-2
+Change Component DesignItemId : Designator=R704 Old DesignItemId=CMP-00083-1 New DesignItemId=CMP-00083-2
+Change Component DesignItemId : Designator=R801 Old DesignItemId=CMP-00083-1 New DesignItemId=CMP-00083-2
+Change Component DesignItemId : Designator=R709 Old DesignItemId=CMP-00108-1 New DesignItemId=CMP-00108-2
+Change Component Footprint: Designator=C702 Old Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow New Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow
+Change Component Footprint: Designator=C704 Old Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow New Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow
+Change Component Footprint: Designator=C705 Old Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow New Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow
+Change Component Footprint: Designator=C706 Old Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow New Footprint=WCAP-CSGP_0805_L2W1.25H0.8_Reflow
+Change Managed Component Library Link : Designator=C201 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=73266F43-F2E7-46A4-9E57-65E1F9660729 New ItemGUID=73266F43-F2E7-46A4-9E57-65E1F9660729 Old RevisionGUID=0eeccdd0-bf59-4853-85f7-e24f88eb853e New RevisionGUID=3AF112D2-E3C9-466B-A7F5-63D91ABBD75B
+Change Managed Component Library Link : Designator=C202 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=73266F43-F2E7-46A4-9E57-65E1F9660729 New ItemGUID=73266F43-F2E7-46A4-9E57-65E1F9660729 Old RevisionGUID=0eeccdd0-bf59-4853-85f7-e24f88eb853e New RevisionGUID=3AF112D2-E3C9-466B-A7F5-63D91ABBD75B
+Change Managed Component Library Link : Designator=C702 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=18a8b136-5675-469a-9e6f-5fc8ebe343c9 New ItemGUID=18a8b136-5675-469a-9e6f-5fc8ebe343c9 Old RevisionGUID=79762a4c-941c-4319-b06b-bdc84c353ac8 New RevisionGUID=79A588D6-794E-46E5-B666-93E9142185C9
+Change Managed Component Library Link : Designator=C704 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=18a8b136-5675-469a-9e6f-5fc8ebe343c9 New ItemGUID=18a8b136-5675-469a-9e6f-5fc8ebe343c9 Old RevisionGUID=79762a4c-941c-4319-b06b-bdc84c353ac8 New RevisionGUID=79A588D6-794E-46E5-B666-93E9142185C9
+Change Managed Component Library Link : Designator=C705 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=18a8b136-5675-469a-9e6f-5fc8ebe343c9 New ItemGUID=18a8b136-5675-469a-9e6f-5fc8ebe343c9 Old RevisionGUID=79762a4c-941c-4319-b06b-bdc84c353ac8 New RevisionGUID=79A588D6-794E-46E5-B666-93E9142185C9
+Change Managed Component Library Link : Designator=C706 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=9d94f654-c61b-4997-8501-fa89b51e1655 New ItemGUID=9d94f654-c61b-4997-8501-fa89b51e1655 Old RevisionGUID=f10562a6-0467-43cc-a823-043ccb86bcfd New RevisionGUID=4A0406D2-8B55-49AC-BFE0-77F47BB375ED
+Change Managed Component Library Link : Designator=MH1 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 New ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 Old RevisionGUID=ACB2657C-F6CD-4854-976B-A14743B20411 New RevisionGUID=B90C9C11-2540-4B03-A690-07FE0C91D683
+Change Managed Component Library Link : Designator=MH2 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 New ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 Old RevisionGUID=ACB2657C-F6CD-4854-976B-A14743B20411 New RevisionGUID=B90C9C11-2540-4B03-A690-07FE0C91D683
+Change Managed Component Library Link : Designator=MH3 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 New ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 Old RevisionGUID=ACB2657C-F6CD-4854-976B-A14743B20411 New RevisionGUID=B90C9C11-2540-4B03-A690-07FE0C91D683
+Change Managed Component Library Link : Designator=MH4 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 New ItemGUID=E2B93A19-8BCB-47C9-B366-591FF1E7B9F6 Old RevisionGUID=ACB2657C-F6CD-4854-976B-A14743B20411 New RevisionGUID=B90C9C11-2540-4B03-A690-07FE0C91D683
+Change Managed Component Library Link : Designator=R4 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 New ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 Old RevisionGUID=1204b67c-edf1-4912-8bbb-71e2516fd4ab New RevisionGUID=05E51551-5632-4057-BDC2-258C687F4C22
+Change Managed Component Library Link : Designator=R6 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 New ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 Old RevisionGUID=1204b67c-edf1-4912-8bbb-71e2516fd4ab New RevisionGUID=05E51551-5632-4057-BDC2-258C687F4C22
+Change Managed Component Library Link : Designator=R8 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 New ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 Old RevisionGUID=1204b67c-edf1-4912-8bbb-71e2516fd4ab New RevisionGUID=05E51551-5632-4057-BDC2-258C687F4C22
+Change Managed Component Library Link : Designator=R10 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 New ItemGUID=c55d6802-85d7-44b8-9f0d-3d77f182fc00 Old RevisionGUID=1204b67c-edf1-4912-8bbb-71e2516fd4ab New RevisionGUID=05E51551-5632-4057-BDC2-258C687F4C22
+Change Managed Component Library Link : Designator=R501 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 New ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 Old RevisionGUID=F6CA0E93-B55F-4653-8C51-BB0C5A3D9C28 New RevisionGUID=713F461F-4CDB-4BFC-9344-E3A1A465D29E
+Change Managed Component Library Link : Designator=R502 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 New ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 Old RevisionGUID=F6CA0E93-B55F-4653-8C51-BB0C5A3D9C28 New RevisionGUID=713F461F-4CDB-4BFC-9344-E3A1A465D29E
+Change Managed Component Library Link : Designator=R503 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 New ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 Old RevisionGUID=F6CA0E93-B55F-4653-8C51-BB0C5A3D9C28 New RevisionGUID=713F461F-4CDB-4BFC-9344-E3A1A465D29E
+Change Managed Component Library Link : Designator=R504 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 New ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 Old RevisionGUID=F6CA0E93-B55F-4653-8C51-BB0C5A3D9C28 New RevisionGUID=713F461F-4CDB-4BFC-9344-E3A1A465D29E
+Change Managed Component Library Link : Designator=R601 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=0CCE7084-4617-4FAB-8E82-CB34D4D4DC38 New ItemGUID=0CCE7084-4617-4FAB-8E82-CB34D4D4DC38 Old RevisionGUID=E751BDF4-A441-421C-B3DD-7E7F3CDADA8F New RevisionGUID=9C4A4783-507C-46E5-A492-D4CA13347EBC
+Change Managed Component Library Link : Designator=R602 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 New ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 Old RevisionGUID=F6CA0E93-B55F-4653-8C51-BB0C5A3D9C28 New RevisionGUID=713F461F-4CDB-4BFC-9344-E3A1A465D29E
+Change Managed Component Library Link : Designator=R603 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 New ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 Old RevisionGUID=c328ad94-6d8f-43f6-b7f4-46593eaccb3e New RevisionGUID=2EEB18A6-29E0-4035-915C-BF1AA2C3CE2D
+Change Managed Component Library Link : Designator=R604 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 New ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 Old RevisionGUID=c328ad94-6d8f-43f6-b7f4-46593eaccb3e New RevisionGUID=2EEB18A6-29E0-4035-915C-BF1AA2C3CE2D
+Change Managed Component Library Link : Designator=R704 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=0CCE7084-4617-4FAB-8E82-CB34D4D4DC38 New ItemGUID=0CCE7084-4617-4FAB-8E82-CB34D4D4DC38 Old RevisionGUID=E751BDF4-A441-421C-B3DD-7E7F3CDADA8F New RevisionGUID=9C4A4783-507C-46E5-A492-D4CA13347EBC
+Change Managed Component Library Link : Designator=R709 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=F4B31A56-BDD1-4CF6-A2E4-554AD2F00C70 New ItemGUID=F4B31A56-BDD1-4CF6-A2E4-554AD2F00C70 Old RevisionGUID=0D023B8D-66EB-42DD-AB97-8070779E6087 New RevisionGUID=C9F89012-1699-48CC-A7B8-1B5685560540
+Change Managed Component Library Link : Designator=R710 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=b2a0a9a8-2f29-4bde-a7f1-f8afc898d22b New ItemGUID=b2a0a9a8-2f29-4bde-a7f1-f8afc898d22b Old RevisionGUID=260073B8-E94A-476F-95AB-6D6E0379048B New RevisionGUID=8B29D456-8141-4F2A-A676-9A2F9FB71F37
+Change Managed Component Library Link : Designator=R801 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=0CCE7084-4617-4FAB-8E82-CB34D4D4DC38 New ItemGUID=0CCE7084-4617-4FAB-8E82-CB34D4D4DC38 Old RevisionGUID=E751BDF4-A441-421C-B3DD-7E7F3CDADA8F New RevisionGUID=9C4A4783-507C-46E5-A492-D4CA13347EBC
+Change Managed Component Library Link : Designator=R802 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 New ItemGUID=860DE344-0621-4356-AC5F-22CDA21158F9 Old RevisionGUID=F6CA0E93-B55F-4653-8C51-BB0C5A3D9C28 New RevisionGUID=713F461F-4CDB-4BFC-9344-E3A1A465D29E
+Change Managed Component Library Link : Designator=R803 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 New ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 Old RevisionGUID=c328ad94-6d8f-43f6-b7f4-46593eaccb3e New RevisionGUID=2EEB18A6-29E0-4035-915C-BF1AA2C3CE2D
+Change Managed Component Library Link : Designator=R804 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 New ItemGUID=BD1C048C-D370-4C61-B53A-F8F121204368 Old RevisionGUID=c328ad94-6d8f-43f6-b7f4-46593eaccb3e New RevisionGUID=2EEB18A6-29E0-4035-915C-BF1AA2C3CE2D
+Change component parameters: Designator = "C702" ("C702"); Footprint = "WCAP-CSGP_0805_L2W1.25H0.8_Reflow"; UniqueID = "\EOUVXMZI\KMHBVTVH" ("\EOUVXMZI\KMHBVTVH")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C704" ("C704"); Footprint = "WCAP-CSGP_0805_L2W1.25H0.8_Reflow"; UniqueID = "\EOUVXMZI\NXPTHPGN" ("\EOUVXMZI\NXPTHPGN")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C705" ("C705"); Footprint = "WCAP-CSGP_0805_L2W1.25H0.8_Reflow"; UniqueID = "\EOUVXMZI\TVFYWVNZ" ("\EOUVXMZI\TVFYWVNZ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C706" ("C706"); Footprint = "WCAP-CSGP_0805_L2W1.25H0.8_Reflow"; UniqueID = "\EOUVXMZI\HJMXJCGU" ("\EOUVXMZI\HJMXJCGU")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gender"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Current Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=TP101(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP102(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP103(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP104(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP105(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP106(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP107(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP108(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP109(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP201(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP202(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP203(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP204(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP301(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP302(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP303(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP304(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP305(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP401(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP501(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP502(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP503(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP504(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP505(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP506(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP601(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP701(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP702(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP703(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP704(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP705(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP801(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Component: Designator=TP?(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Checked by"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "e-Tech_Racing.SchLib"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TS_Off Pin=TP101-1
+Added Pin To Net: NetName=AIR+_State Pin=TP102-1
+Added Pin To Net: NetName=Precharge_State Pin=TP103-1
+Added Pin To Net: NetName=AIR-_State Pin=TP104-1
+Added Pin To Net: NetName=HV_Accumulator Pin=TP105-1
+Added Pin To Net: NetName=AIR+_Coil Pin=TP106-1
+Added Pin To Net: NetName=Precharge_Coil Pin=TP107-1
+Added Pin To Net: NetName=AIR-_Coil Pin=TP108-1
+Added Pin To Net: NetName=SC_End Pin=TP109-1
+Added Pin To Net: NetName=Implausibilities_Undelayed Pin=TP201-1
+Added Pin To Net: NetName=Implausibilities Pin=TP202-1
+Added Pin To Net: NetName=Latch_Reset Pin=TP203-1
+Added Pin To Net: NetName=Safe_State Pin=TP204-1
+Added Pin To Net: NetName=AIR+_Implausibility Pin=TP301-1
+Added Pin To Net: NetName=AIR-_Implausibility Pin=TP302-1
+Added Pin To Net: NetName=Precharge_Implausibility Pin=TP303-1
+Added Pin To Net: NetName=Relays_State_Detection Pin=TP304-1
+Added Pin To Net: NetName=Relays_Implausibility Pin=TP305-1
+Added Pin To Net: NetName=Not_Intentional_Relay_State Pin=TP401-1
+Added Pin To Net: NetName=V_REF Pin=TP501-1
+Added Pin To Net: NetName=HV_Accu_SCS Pin=TP502-1
+Added Pin To Net: NetName=AIR+_SCS Pin=TP503-1
+Added Pin To Net: NetName=AIR-_SCS Pin=TP504-1
+Added Pin To Net: NetName=Precharge_SCS Pin=TP505-1
+Added Pin To Net: NetName=SCS_Error Pin=TP506-1
+Added Pin To Net: NetName=TSAL_Green Pin=TP601-1
+Added Pin To Net: NetName=TS_On Pin=TP701-1
+Added Pin To Net: NetName=Out_HV_Comparator Pin=TP702-1
+Added Pin To Net: NetName=VREF_HV_Detection Pin=TP703-1
+Added Pin To Net: NetName=HV_Detection_Trigger Pin=TP704-1
+Added Pin To Net: NetName=TSAL_Red Pin=TP801-1
+Added Pin To Net: NetName=No_Voltage_Relays_Closed Pin=TP?-1
+Added Pin To Net: NetName=Voltage_DCBus2 Pin=TP705-1
+Added Net: Name=Voltage_DCBus2
+Added Member To Class: ClassName=TSAL Green Member=Component TP101 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP102 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP103 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP104 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP105 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP106 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP107 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP108 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP109 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP201 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP202 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP203 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP204 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP301 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP302 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP303 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP304 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP305 TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component TP401 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP501 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP502 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP503 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP504 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP505 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP506 TestPoint
+Added Member To Class: ClassName=Green Driver Member=Component TP601 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP701 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP702 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP703 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP704 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP705 TestPoint
+Added Member To Class: ClassName=Red Driver Member=Component TP801 TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component TP? TestPoint

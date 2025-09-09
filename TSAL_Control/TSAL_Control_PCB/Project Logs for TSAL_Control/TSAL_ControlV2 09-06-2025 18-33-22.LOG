@@ -1,0 +1,42 @@
+Change Component Designator: OldDesignator=      NewDesignator=TP203
+Added Member To Class: ClassName=TSAL Green Member=Component TP101 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP102 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP103 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP104 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP105 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP106 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP107 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP108 TestPoint
+Added Member To Class: ClassName=TSAL Green Member=Component TP109 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP201 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP202 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP203 TestPoint
+Added Member To Class: ClassName=Implausibilities Member=Component TP204 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP301 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP302 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP303 TestPoint
+Added Member To Class: ClassName=Relay Implausibility Member=Component TP304 TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component TP401 TestPoint
+Added Member To Class: ClassName=EV 4.10.14 Member=Component TP402 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP501 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP502 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP503 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP504 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP505 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP506 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP507 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP508 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP509 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP510 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP511 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP512 TestPoint
+Added Member To Class: ClassName=SCS Member=Component TP513 TestPoint
+Added Member To Class: ClassName=Green Driver Member=Component TP601 TestPoint
+Added Member To Class: ClassName=Green Driver Member=Component TP602 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP701 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP702 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP703 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP704 TestPoint
+Added Member To Class: ClassName=TSAL Red Member=Component TP705 TestPoint
+Added Member To Class: ClassName=Red Driver Member=Component TP801 TestPoint
+Added Member To Class: ClassName=Red Driver Member=Component TP802 TestPoint
